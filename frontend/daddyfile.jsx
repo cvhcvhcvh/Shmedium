@@ -5,13 +5,31 @@ import { signup, login, logout } from "./actions/session_actions";
 import configureStore from "./store/store";
 
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
+ 
+  let preloadedState = undefined
+    
+    if(window.current_user){
+        preloadedState = {
+            entities: {
+                users: { [window.current_user.id]: window.current_user }
+            },
+            session:{
+                id: window.current_user.id
+            }
+        }
+    } 
+  const store = configureStore(preloadedState);
+
+  delete window.current_user
+
   window.login = login;
+  window.store = store;
   window.logout = logout;
-  window.signup = signup;
-  window.store = configureStore;
+  window.dispatch = store.dispatch;
+  window.getState = store.getState;
   
-  const store = configureStore();
+
   const root = document.getElementById("root");
   ReactDOM.render(<Root store={store}/>, root);
 });

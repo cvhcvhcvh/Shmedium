@@ -25,3 +25,4 @@ const Welcome = ({ currentUser, logout }) => {
 
 
 export default Welcome;
+

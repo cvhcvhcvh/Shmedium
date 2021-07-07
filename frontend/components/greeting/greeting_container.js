@@ -10,7 +10,8 @@ const mstp = ({ session, entities: { users } }) => {
 };
 
 const mdtp = dispatch => ({
-  logout: () => dispatch(logout())
+  logout: () => dispatch(logout()), 
+  openModal: modal => dispatch(openModal(modal))
 });
 
 export default connect(mstp, mdtp)(Greeting);

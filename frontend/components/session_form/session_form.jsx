@@ -56,10 +56,11 @@ class SessionForm extends React.Component {
       <>
       <h1 className={"splashlogo"}></h1>
       <div className="login-form-container">
+        {this.props.otherForm}
         <form onSubmit={this.handleSubmit} className="login-form-box">
-    
-          {this.props.formType} or {this.props.navLink}
-          {this.renderErrors()}
+      
+          {/* {this.props.formType} or {this.props.navLink}
+          {this.renderErrors()} */}
           <div className="login-form">
            
             <label>Username:
@@ -83,6 +84,7 @@ class SessionForm extends React.Component {
           </div>
         </form>
       </div>
+
       </>
     );
   }

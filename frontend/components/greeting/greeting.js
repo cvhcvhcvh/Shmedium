@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Welcome = ({ currentUser, logout }) => {
+const Greeting = ({ currentUser, logout }) => {
   const homeLinks = () => (
     <nav className="sign-in-get-started">
       <Link to="/login" style={{ textDecoration: 'none' }}>Sign In</Link>
@@ -24,5 +24,5 @@ const Welcome = ({ currentUser, logout }) => {
 };
 
 
-export default Welcome;
+export default Greeting;
 

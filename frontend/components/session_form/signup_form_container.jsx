@@ -10,7 +10,7 @@ const mstp = ({ errors }) => {
   return {
     errors: errors.session,
     formType: 'Get Started',
-    navLink: <Link to="/login" style={{ textDecoration: 'none' }}>Sign In</Link>,
+    // navLink: <Link to="/login" style={{ textDecoration: 'none' }}>Sign In</Link>,
     
   };
 };

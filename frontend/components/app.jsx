@@ -6,15 +6,20 @@ import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import Navbar from './navbar/navbar';
+
 
 const App = () => (
   <div>
     <Modal />
+    <Navbar />
+    <br/>
     <header>
-      <Link to="/" style={{ textDecoration: 'none' }}className="header-link">
-        <h1 className={"splashlogo"}>Shmedium: one size fits most</h1>
-      </Link>
+      {/* <Link to="/" style={{ textDecoration: 'none' }}className="header-link">
+        <h1 className={"splashlogo"}>Shmedium: one size fits most</h1> */}
+      {/* </Link> */}
       <GreetingContainer />
+      
     </header>
     <Switch>
       <Route exact path="/" />

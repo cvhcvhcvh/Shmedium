@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { login } from '../../actions/session_actions';
+import { login, removeErrors } from '../../actions/session_actions';
 import SessionForm from './session_form';
 import { openModal, closeModal } from '../../actions/modal_actions';
+
 
 const mstp = ({ errors }) => {
   return {
@@ -26,7 +27,9 @@ const mdtp = dispatch => {
           </button>
       </>
     ),
-    closeModal: () => dispatch(closeModal())
+    closeModal: () => dispatch(closeModal()),
+    removeErrors: () => dispatch(removeErrors())
+    
   };
 };
 

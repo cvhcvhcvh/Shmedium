@@ -15,6 +15,8 @@ const App = () => (
     <Navbar />
     <br/>
     <header>
+      <h1 className="splash-header">Medium is a place to write, read, and connect</h1>
+        <p className="splash-sub-header">It's easy and free to post your thinking on any topic and connect with millions of readers.</p>
       {/* <Link to="/" style={{ textDecoration: 'none' }}className="header-link">
         <h1 className={"splashlogo"}>Shmedium: one size fits most</h1> */}
       {/* </Link> */}

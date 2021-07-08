@@ -17,6 +17,16 @@ class SessionForm extends React.Component {
     });
   }
 
+  demoUserSignin(demoUser) {
+    return e => {
+      e.preventDefault();
+      this.props.action(demoUser)
+      .then(() => {
+        this.props.closeModal()
+        // this.props.history.push("/")
+    })
+  }}
+
   handleSubmit(e) {
     e.preventDefault();
     this.props.action(this.state)
@@ -38,6 +48,12 @@ class SessionForm extends React.Component {
 
   render() {
 
+    const demoUser = {
+      username: "Demo",
+      email: "demo@user.com",
+      password: "123456"
+    } 
+
     const emailInput = this.props.formType === 'Get Started' ? (
       <>
         <label>Email:
@@ -56,9 +72,8 @@ class SessionForm extends React.Component {
       <>
       <h1 className={"splashlogo"}></h1>
       <div className="login-form-container">
-        {this.props.otherForm}
         <form onSubmit={this.handleSubmit} className="login-form-box">
-      
+        <h1>{this.props.welcome}</h1>
           {/* {this.props.formType} or {this.props.navLink}
           {this.renderErrors()} */}
           <div className="login-form">
@@ -81,6 +96,14 @@ class SessionForm extends React.Component {
             </label>
                 <br/>
             <input className="session-submit" type="submit" value={this.props.formType} />
+            {this.props.formType === 'Sign In' ? 
+                  <button 
+                    onClick={this.demoUserSignin(demoUser)}
+                    className={"inputGroup-formButton"}  
+                  >Demo User</button> : ''} 
+             <br/>
+             <br/>
+            <div>{this.props.otherForm}</div>
           </div>
         </form>
       </div>

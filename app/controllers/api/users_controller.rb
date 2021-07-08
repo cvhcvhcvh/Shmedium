@@ -4,10 +4,17 @@ class Api::UsersController < ApplicationController
 
     if @user.save
       login(@user)
-      render "api/users/show"
+      render "/api/users/show"
+      #render :show ?
     else
       render json: ["Invalid credentials"], status: 422
     end
+  end
+
+  def index 
+    @users = User.all
+    render "/api/users"
+    #render :index?
   end
 
   private

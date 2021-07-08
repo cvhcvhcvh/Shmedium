@@ -19,7 +19,7 @@ const Greeting = ({ currentUser, logout }) => {
     </hgroup>
   );
 
-  return currentUser ? personalGreeting() : homeLinks();
+  return currentUser ? personalGreeting() : "";
   
 };
 

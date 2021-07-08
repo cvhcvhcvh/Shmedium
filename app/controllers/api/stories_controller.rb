@@ -2,7 +2,7 @@ class Api::StoriesController < ApplicationController
   before_action :set_story, only: [:show, :update, :destroy]
 
   def index
-    @story = Story.all
+    @stories = Story.all
   end
 
   def show

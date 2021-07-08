@@ -29,7 +29,7 @@ export const removeStory = (storyId) => {
 export const requestStories = () => dispatch => {
   return(
     ReportAPIUtil.fetchStories()
-    .then(reports => dispatch(receiveStories(stories)))
+    .then(stories => dispatch(receiveStories(stories)))
   )
 }
   
@@ -54,7 +54,7 @@ export const updateStory = (story) => dispatch => {
   )
 }
 
-export const deleteStory = (StoryId) => dispatch => {
+export const deleteStory = (storyId) => dispatch => {
   return(
     ReportAPIUtil.deleteStory(storyId)
     .then(() => dispatch(removeStory(storyId)))

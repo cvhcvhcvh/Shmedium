@@ -1,1 +1,1 @@
-json.partial! 'report', report: @report
+json.extract! @user, :id, :username, :email

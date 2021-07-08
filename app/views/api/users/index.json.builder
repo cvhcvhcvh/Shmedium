@@ -1,5 +1,5 @@
-@users.each do |report|
-  json.set! report.id do
-    json.partial! 'report', report: report
+@users.each do |user|
+  json.set! user.id do
+    json.partial! 'user', user: user
   end
 end

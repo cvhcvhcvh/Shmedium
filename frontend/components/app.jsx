@@ -7,6 +7,11 @@ import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Navbar from './navbar/navbar';
+import test from './test';
+import StoryIndexContainer from './stories/index/story_index_container';
+
+
+
 
 
 const App = () => (
@@ -23,10 +28,12 @@ const App = () => (
       
     </header>
     <Switch>
-        <Route exact path="/" component={StoryIndexContainer}/>
+        <Route exact path="/" />
+        {/* <Route exact path="/" component={StoryIndexContainer}/>
+        <Route exact path="/banana" component={test} /> */}
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-        <Route exact path="/stories/:storyId" component={StoryShowContainer} />
+        {/* <Route exact path="/stories/:storyId" component={StoryShowContainer} /> */}
     </Switch>
   </div>
 );

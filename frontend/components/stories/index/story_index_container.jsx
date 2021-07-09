@@ -1,20 +1,19 @@
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
+// import StoryIndex from './story_index';
+// import { requestStories } from '../../../actions/story_actions';
 
-import StoryIndex from './story_index';
-import { requestStories, removeStory } from '../../actions/story_actions';
 
+// const mstp = state => {
+//   return({
+//     stories: Object.values(state.entities.stories)
+//   })
+// }
 
-const mstp = state => {
-  return({
-    stories: Object.values(state.stories)
-  })
-}
+// const mdtp = dispatch => {
+//   return({
+//     requestStories: () => dispatch(requestStories())
+//     // removeStory: (storyId) => dispatch(removeStory(storyId))
+//   })
+// }
 
-const mdtp = dispatch => {
-  return({
-    requestStories: () => dispatch(requestStories()), //
-    deleteStory: (storyId) => dispatch(deleteStory(storyId))
-  })
-}
-
-export default connect(mstp, mdtp)(StoryIndex)
+// export default connect(mstp, mdtp)(StoryIndex)

@@ -1,4 +1,4 @@
-@story.each do |story|
+@stories.each do |story|
   json.set! story.id do
     json.partial! 'story', story: story
   end

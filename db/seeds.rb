@@ -14,3 +14,9 @@ User.create({username: "Demo", email: "demo@user.com", password: "123456"})
 # Song.delete_all
 # User.connection.execute('ALTER SEQUENCE songs_id_seq RESTART WITH 1')
 # Song.create({title: "Alive", artist_id: 1})
+
+story1 = Story.create!(
+  title: "To be, or not to be: that is the question.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2000, supplemental: false),
+  author_id: 1
+)

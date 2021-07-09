@@ -4,6 +4,7 @@ import Root from './components/root';
 // import { signup, login, logout } from "./actions/session_actions";
 import {login, logout} from "./util/session_api_util";
 import configureStore from "./store/store";
+import { fetchStories } from "./util/story_api_util";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.dispatch = store.dispatch;
   window.getState = store.getState;
   window.test = login
+  window.fetchStories = fetchStories; 
   
 
   const root = document.getElementById("root");

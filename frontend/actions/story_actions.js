@@ -28,14 +28,14 @@ export const removeStory = (storyId) => {
 
 export const requestStories = () => dispatch => {
   return(
-    ReportAPIUtil.fetchStories()
+    StoryAPIUtil.fetchStories()
     .then(stories => dispatch(receiveStories(stories)))
   )
 }
   
 export const requestStory = (storyId) => dispatch => {
   return(
-    ReportAPIUtil.fetchStory(storyId)
+    StoryAPIUtil.fetchStory(storyId)
     .then(story => dispatch(receiveStory(story)))
   )
 }
@@ -49,14 +49,14 @@ export const createStory = story => dispatch => {
 
 export const updateStory = (story) => dispatch => {
   return(
-    ReportAPIUtil.updateStory(story)
+    StoryAPIUtil.updateStory(story)
     .then(story => dispatch(receiveStory(story)))
   )
 }
 
 export const deleteStory = (storyId) => dispatch => {
   return(
-    ReportAPIUtil.deleteStory(storyId)
+    StoryAPIUtil.deleteStory(storyId)
     .then(() => dispatch(removeStory(storyId)))
   )
 }

@@ -23,9 +23,10 @@ const App = () => (
       
     </header>
     <Switch>
-      <Route exact path="/" />
-      <AuthRoute exact path="/login" component={LogInFormContainer} />
-      <AuthRoute exact path="/signup" component={SignUpFormContainer} />
+        <Route exact path="/" component={StoryIndexContainer}/>
+        <AuthRoute exact path="/login" component={LogInFormContainer} />
+        <AuthRoute exact path="/signup" component={SignUpFormContainer} />
+        <Route exact path="/stories/:storyId" component={StoryShowContainer} />
     </Switch>
   </div>
 );

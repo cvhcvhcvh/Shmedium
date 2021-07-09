@@ -1,2 +1,2 @@
-# json.partial! 'story', story: @story
+json.partial! 'story', story: @story
 

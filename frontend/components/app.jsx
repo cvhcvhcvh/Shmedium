@@ -13,12 +13,6 @@ import UpdateStoryContainer from './stories/form/update_story_container';
 import StoryShowContainer from './stories/show/story_show_container';
 
 
-
-
-
-
-
-
 const App = () => (
   <div>
     <Modal />

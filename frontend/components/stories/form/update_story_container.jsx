@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { requestStory, updateStory } from '../../../actions/story_actions';
 import StoryForm from './story_form';
+import { withRouter} from 'react-router-dom';
 
 
 class EditStoryForm extends React.Component {
@@ -21,6 +22,7 @@ class EditStoryForm extends React.Component {
     if (!story) return null;
     return (
       <StoryForm
+        history={this.props.history}
         action={action}
         formType={formType}
         story={story} />
@@ -31,7 +33,7 @@ class EditStoryForm extends React.Component {
 
 const mstp = (state, ownProps) => {
   return({
-    story: state.stories[ownProps.match.params.storyId], 
+    story: state.entities.stories[ownProps.match.params.storyId], 
     formType: "Update Story"
   })
 }

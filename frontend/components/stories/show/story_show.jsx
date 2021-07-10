@@ -22,8 +22,9 @@ class StoryShow extends React.Component{
   
         <h1>{this.props.story.title}</h1>
         <p>{this.props.story.body}</p>
-        {/* <Link to={`/stories/${props.story.id}/edit`}>Edit</Link>
-        <br/> */}
+        <Link to={`/stories/${this.props.story.id}/edit`}>Edit</Link>
+        <br/>
+        
         <Link to={`/`}>Home</Link>
       
       </>

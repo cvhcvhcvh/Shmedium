@@ -14,6 +14,7 @@ class StoryForm extends React.Component {
   }
 
   handleSubmit(e){
+    console.log(this.props)
     e.preventDefault();
     this.props.action(this.state)
     .then((res) => this.props.history.push(`/stories/${res.story.id}`))
@@ -42,7 +43,7 @@ class StoryForm extends React.Component {
           <label>Body
             <textarea value={this.state.body} onChange={this.updateBody}/>
           </label>
-          <button type="submit">Submit Story</button>
+          <button type="submit">Submit</button>
         </form>
 
       </>

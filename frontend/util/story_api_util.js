@@ -8,31 +8,33 @@ export const fetchStories = () => {
       url: `api/stories`
     })
     )
-  }
+}
   
-  export const fetchStory = (StoryId) => {
-    return(
-      $.ajax({
-        method: "GET",
-        url: `api/reports/${StoryId}`
-      })
-      )
-    }
+export const fetchStory = (storyId) => {
+  return(
+    $.ajax({
+      method: "GET",
+      url: `api/stories/${storyId}`
+    })
+    )
+}
     
-    export const createStory = story => {
-      return(
-        $.ajax({
-          method: "POST", 
-          url: `api/stories`, 
-          data: {story}
-        })
-      )
-    }
-    export const updateStory = (story) => {
+export const createStory = story => {
+  return(
+    $.ajax({
+      method: "POST", 
+      url: `api/stories`, 
+      data: {story}
+    })
+  )
+}
+export const updateStory = (story) => {
+  const test = story.id
+  delete story.id
   return(
     $.ajax({
       method: "PATCH",
-      url: `api/story/${story.id}`, 
+      url: `api/stories/${test}`, 
       data: {story}
     })
   )
@@ -42,7 +44,7 @@ export const deleteStory = (storyId) => {
   return(
     $.ajax({
       method: "DELETE",
-      url: `api/story/${storyId}`
+      url: `api/stories/${storyId}`
     })
   )
 }

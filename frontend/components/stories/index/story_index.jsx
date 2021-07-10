@@ -1,33 +1,36 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import StoryIndexItem from './story_index_item';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import StoryIndexItem from './story_index_item';
 
 
-// class StoryIndex extends React.Component{
-//   constructor(props){
-//     super(props)
-//   }
 
-//   componentDidMount(){
-//     this.props.requestStories()
-//   }
+class StoryIndex extends React.Component{
+  constructor(props){
+    super(props)
+  }
 
-//   render(){
-//     const { stories, removeStory } = this.props
-//     return(
-//       <>
-//         <ul>
-//           {stories.map(story =>{
-//             return(
-//               <StoryIndexItem key={story.id} story={story} removeStory={removeStory}/>
-//             )
-//           })}
+  componentDidMount(){
+    this.props.requestStories()
+  }
 
-//         </ul>
-//           <Link to={`/story/new`}>New Story</Link>
-//       </>
-//     )
-//   }
-// }
+  render(){
+    
+    const { stories } = this.props
+    return(
+      <>
+        <ul>
+          {stories.map(story =>{
+            return(
+              
+              <StoryIndexItem key={story.id} story={story}/>
+            )
+          })}
+            
+        </ul>
+          <Link to={`/stories/new`}>New Story</Link>
+      </>
+    )
+  }
+}
 
-// export default StoryIndex
+export default StoryIndex

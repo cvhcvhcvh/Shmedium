@@ -14,7 +14,7 @@ const Greeting = ({ currentUser, logout }) => {
     //   <Link to="/signup" style={{ textDecoration: 'none' }}>Get Started</Link>
     // </nav>
     <div className="topnav">
-        <a className="active" href="#home">Shmedium</a>
+        <a className="active" href="#">Shmedium</a>
           <Link to="/"></Link>
         <a href="#linkedin">Linkedin</a>
         <a href="#github">Github</a>
@@ -26,7 +26,7 @@ const Greeting = ({ currentUser, logout }) => {
   const loggedIn = () => (
     
       <div className="topnav">
-      <a className="active" href="#home">Shmedium</a>
+      <a className="active" href="#">Shmedium</a>
         <Link to="/"></Link>
       <a href="#linkedin">Linkedin</a>
       <a href="#github">Github</a>

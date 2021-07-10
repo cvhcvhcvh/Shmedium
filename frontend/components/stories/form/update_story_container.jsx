@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { requestStory, updateStory } from '../../actions/report_actions';
-import StoryForm from './report_form';
+import { requestStory, updateStory } from '../../../actions/story_actions';
+import StoryForm from './story_form';
 
 
 class EditStoryForm extends React.Component {
@@ -10,7 +10,7 @@ class EditStoryForm extends React.Component {
   }
 
   componentDidMount(){
-    this.props.requestStory(this.props.match.params.reportId)
+    this.props.requestStory(this.props.match.params.storyId)
   }
 
   render() {
@@ -18,9 +18,9 @@ class EditStoryForm extends React.Component {
     const { action, formType, story } = this.props;
 
  
-    if (!report) return null;
+    if (!story) return null;
     return (
-      <ReportForm
+      <StoryForm
         action={action}
         formType={formType}
         story={story} />

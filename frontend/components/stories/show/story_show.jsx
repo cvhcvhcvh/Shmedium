@@ -1,25 +1,34 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-// class StoryShow extends React.Component{
-//   constructor(props){
-//     super(props)
-//   }
+class StoryShow extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      loading: true
+  };
+  }
 
-//   componentDidMount(){
-//     this.props.requestStory(this.props.match.params.storyId)
-//   }
+  componentDidMount(){
+    this.props.requestStory(this.props.match.params.storyId)
+  }
+  
 
-//   render(){
-//     return(
-//       <>
-//         <p>{this.props.story.title}</p>
-//         <p>{this.props.story.body}</p>
-//         <Link to={`/`}>Story Index</Link>
+
+
+  render(){
+    return(
+      <>
+  
+        <h1>{this.props.story.title}</h1>
+        <p>{this.props.story.body}</p>
+        {/* <Link to={`/stories/${props.story.id}/edit`}>Edit</Link>
+        <br/> */}
+        <Link to={`/`}>Home</Link>
       
-//       </>
-//     )
-//   }
-// }
+      </>
+    )
+  }
+}
 
-// export default StoryShow
+export default StoryShow

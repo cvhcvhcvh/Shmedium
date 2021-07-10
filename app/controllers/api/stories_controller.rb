@@ -7,6 +7,8 @@ class Api::StoriesController < ApplicationController
   end
 
   def show
+    @story = Story.find(params[:id])
+    render :show
   end
 
   def create
@@ -20,10 +22,12 @@ class Api::StoriesController < ApplicationController
   end
 
   def update
-    if @story.update(story_params)
-      render :show
-    else
-      render json: @story.errors.full_messages, status: :unprocessable_entity
+    @story = Story.find(params[:id])
+
+    if @story && @story.update(story_params)
+        render :show
+    else 
+        render json: @spot.errors.full_messages, status: 422
     end
   end
 
@@ -41,6 +45,6 @@ class Api::StoriesController < ApplicationController
   end
 
   def story_params
-    params.require(:story).permit(:title, :body)
+    params.require(:story).permit(:title, :body, :author_id)
   end
 end

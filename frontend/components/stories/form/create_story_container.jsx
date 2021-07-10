@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { createReport } from '../../actions/report_actions';
-import StoryForm from './report_form';
+import { createStory } from '../../../actions/story_actions';
+import StoryForm from './story_form';
 
 const mstp = state => {
   return({
@@ -9,6 +9,7 @@ const mstp = state => {
       body: '', //
       // createdAt: '', //
       // updatedAt: ''
+      author_id: state.session.id
     }, 
     formType: "Add Story"
   })

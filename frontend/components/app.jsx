@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {Route, Switch, Link} from 'react-router-dom';
 import Modal from './modal/modal';
@@ -9,6 +8,12 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Navbar from './navbar/navbar';
 import test from './test';
 import StoryIndexContainer from './stories/index/story_index_container';
+import CreateStoryContainer from './stories/form/create_story_container';
+import UpdateStoryContainer from './stories/form/update_story_container';
+import StoryShowContainer from './stories/show/story_show_container';
+
+
+
 
 
 
@@ -28,12 +33,14 @@ const App = () => (
       
     </header>
     <Switch>
-        <Route exact path="/" />
-        {/* <Route exact path="/" component={StoryIndexContainer}/>
-        <Route exact path="/banana" component={test} /> */}
+        {/* <Route exact path="/" /> */}
+        <Route exact path="/" component={StoryIndexContainer}/>
+        <Route exact path="/banana" component={test} />
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-        {/* <Route exact path="/stories/:storyId" component={StoryShowContainer} /> */}
+        <ProtectedRoute exact path="/stories/new" component={CreateStoryContainer} />
+        <ProtectedRoute exact path="/stories/:storyId/edit" component={UpdateStoryContainer} />
+        <Route exact path="/stories/:storyId" component={StoryShowContainer} />
     </Switch>
   </div>
 );

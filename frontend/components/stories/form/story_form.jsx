@@ -14,7 +14,6 @@ class StoryForm extends React.Component {
   }
 
   handleSubmit(e){
-    console.log(this.props)
     e.preventDefault();
     this.props.action(this.state)
     .then((res) => this.props.history.push(`/stories/${res.story.id}`))

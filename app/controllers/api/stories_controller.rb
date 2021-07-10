@@ -32,8 +32,15 @@ class Api::StoriesController < ApplicationController
   end
 
   def destroy
-    @story.destroy
-    head :no_content
+    
+    @story = Story.find(params[:id])
+
+    if @story.destroy
+        render :show
+    else 
+        render json: @story.errors.full_messages, status: 403
+    end
+
   end
 
   private

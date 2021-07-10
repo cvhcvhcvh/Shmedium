@@ -14,7 +14,6 @@ const StoryIndexItem = (props) => {
 
       <br/>
       <br/>
-      {/* <Link to={`/stories/${props.story.id}/edit`}>Edit</Link> */}
       {/* <button onClick={() => props.removeStory(props.story.id)}></button> */}
       
     </>

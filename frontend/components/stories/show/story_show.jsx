@@ -6,14 +6,21 @@ class StoryShow extends React.Component{
     super(props)
     this.state = {
       loading: true
-  };
+
+
+    };
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   componentDidMount(){
     this.props.requestStory(this.props.match.params.storyId)
   }
   
-
+  handleSubmit(e){
+    e.preventDefault();
+    this.props.action(this.props.story.id)
+    .then(() => this.props.history.push('/'))
+  }
 
 
   render(){
@@ -24,9 +31,11 @@ class StoryShow extends React.Component{
         <p>{this.props.story.body}</p>
         <Link to={`/stories/${this.props.story.id}/edit`}>Edit</Link>
         <br/>
-        
         <Link to={`/`}>Home</Link>
+        <br/>
       
+        {/* <button onClick={() => this.props.deleteStory(this.props.story.id)}>Later, Bitch</button> */}
+        <button onClick={this.handleSubmit}>Later, Bitch</button>
       </>
     )
   }

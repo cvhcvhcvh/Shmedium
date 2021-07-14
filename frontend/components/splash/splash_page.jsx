@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react'
 import StoryIndexContainer from '../stories/index/story_index_container';
+import Trending from '../trending/trending_index';
+
 
 export default class SplashPage extends Component {
 
   
   render() {
-    console.log(this.props)
     return (
       <>
           
           {!this.props.currentUserId ? <> <header className="home-header">
-            <div className="background-color">
+            <div className>
               <div className="welcome-message"> 
                 <div className="column">
                     <h1 className="splash-header">Medium is a place to write, read, and connect</h1> 
@@ -29,6 +30,7 @@ export default class SplashPage extends Component {
 
           <div className="trending-div">
             <div className="trending-story-box">
+              <Trending/>
             </div> 
           </div> </> : null}
           

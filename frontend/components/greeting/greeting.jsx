@@ -11,7 +11,6 @@ const Greeting = ({ currentUser, logout }) => {
   const loggedOut = () => (
    
         <div className="splash-home-logged-out">
-           <div className="backgound-color">
               <div className="topnav-logged-out">
                 <a className="shmedium-home-link" href="#">Shmedium</a>
                   <Link to="/"></Link>
@@ -23,8 +22,8 @@ const Greeting = ({ currentUser, logout }) => {
                           <a className="nav-link-signup" href="#" onClick={() => dispatch(openModal('signup'))}
                           >Get Started</a>
                       </div>
-               </div>
-            </div>
+
+              </div>
             <div className="home-index">
               {/* <SplashPage/> */}
             </div>

@@ -21,10 +21,10 @@ const mdtp = dispatch => {
     action: (user) => dispatch(login(user)),
     otherForm: (
       <>
-        <div>No account?</div>
-          <button onClick={() => dispatch(openModal('signup'))}>
-            Create one
-          </button>
+        <div>No account?
+          <br/>
+          <button onClick={() => dispatch(openModal('signup'))}>Create one</button>
+        </div>
       </>
     ),
     closeModal: () => dispatch(closeModal()),

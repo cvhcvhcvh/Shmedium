@@ -1,0 +1,89 @@
+.topnav-logged-out {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 72.5%;
+  height: 65px;
+  // padding: 0 300px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  background-color: #C4E2FF;
+}
+
+.header-name{
+  display: flex;
+  align-items: center;
+  
+}
+
+.splash-home-logged-out{
+  width: 100%;
+  border: 1px solid green;
+  background-color: #C4E2FF;
+}
+
+.topnav-logged-out a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-logged-out a:hover {
+  background-color: rgb(38, 138, 55);
+  color: white;
+  border-radius: 40pc;
+}
+
+.topnav-logged-in a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-logged-in a:hover {
+  background-color: rgb(38, 138, 55);
+  color: white;
+  border-radius: 40pc;
+}
+
+.topnav-logged-in {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 72.5%;
+  height: 65px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.nav-buttons-right-logged-in{
+  border: solid 1px red;
+  display: flex;
+}
+
+.nav-buttons-right-logged-out{
+  border: solid 1px red;
+  display: flex;
+  color: blue;
+}
+
+a.shmedium-home-link {
+  font-size: 17px;
+  right: 20px;
+}
+
+// .background-color{
+//   background-color: #C4E2FF;
+//   width: 100%;
+// }
+

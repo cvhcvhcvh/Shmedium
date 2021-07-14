@@ -11,6 +11,7 @@ class StoryIndex extends React.Component{
 
   componentDidMount(){
     this.props.requestStories()
+    this.props.requestUsers()
   }
 
   render(){
@@ -18,7 +19,7 @@ class StoryIndex extends React.Component{
     const { stories } = this.props
     return(
       <>
-        <ul>
+        <div className="home-index">
           {stories.map(story =>{
             return(
               
@@ -26,8 +27,8 @@ class StoryIndex extends React.Component{
             )
           })}
             
-        </ul>
-          <Link to={`/stories/new`}>New Story</Link>
+        </div>
+          {/* <Link to={`/stories/new`}>New Story</Link> */}
       </>
     )
   }

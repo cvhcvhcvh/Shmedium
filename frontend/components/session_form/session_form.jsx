@@ -77,7 +77,7 @@ class SessionForm extends React.Component {
       <h1 className={"splashlogo"}></h1>
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-        <h1>{this.props.welcome}</h1>
+        <h1 className="welcome-heading">{this.props.welcome}</h1>
           {this.renderErrors()}
           <div className="login-form">
            
@@ -87,6 +87,7 @@ class SessionForm extends React.Component {
                 onChange={this.update('username')}
                 className="login-input"
               />
+            
             </label>
                 <br/>
             {emailInput}
@@ -96,6 +97,7 @@ class SessionForm extends React.Component {
                 onChange={this.update('password')}
                 className="login-input"
               />
+              <br/>
             </label>
                 <br/>
             <input className="session-submit" type="submit" value={this.props.formType} />
@@ -104,7 +106,7 @@ class SessionForm extends React.Component {
                     onClick={this.demoUserSignin(demoUser)}
                     className={"inputGroup-formButton"}  
                   >Demo User</button> : ''} 
-             <br/>
+             
              <br/>
             <div>{this.props.otherForm}</div>
           </div>

@@ -1,0 +1,75 @@
+.splashlogo{
+  color: #1C8919;
+}
+
+.welcome-message{
+  border: solid 1px red;
+  background-color: #C4E2FF;
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  width: 70%;
+  height: 400px;
+  padding: 0 20px;
+  margin: 0 auto;
+  border-bottom: solid 1px black;
+}
+
+.home-header{
+  width: 100%;
+  background-color: #C4E2FF;
+}
+
+.splash-home{
+  width: 100%;
+}
+
+.column {
+  flex: 50%;
+  // padding: 10px;
+  height: 325px;
+  border: 1px solid red;
+  
+  // font-size: 25px;
+  // height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.splash-header{
+  // border: solid 1px red;
+  // font-family: helvetica, arial;
+  font-size: 70px;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.splash-sub-header{
+  border: solid 1px red;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 15px;
+  width: 550px;
+  margin: 0 auto;
+}
+
+// .trending-div{
+//   border: solid 1px red;
+ 
+// }
+
+.trending-story-box{
+  border: solid 1px red;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 70%;
+  height: 300px;
+  padding: 0 20px;
+  margin: 10px auto;
+  font-size: 30px;
+}
+
+.story{
+  border: solid 1px blue;
+  height: 120px;
+  width: 350px;
+}
+

@@ -1,0 +1,35 @@
+
+
+.story-show-item{
+  border: solid 1px red;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // justify-content: space-between;
+  width: 1200px;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.story-show-links{
+  border: solid 1px red;
+  display: flex;
+  font-size: 12px;
+  padding: 20px;
+}
+
+.submit-button{
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.story-info{
+  align-items: left;
+  width: 100%;
+}

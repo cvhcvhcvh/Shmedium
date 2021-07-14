@@ -23,10 +23,11 @@
 .submit-button{
   background-color: transparent;
   border: none;
-  font-size: 12px;
+  font-size: 14px;
   &:hover{
     cursor: pointer;
   }
+  color: green;
 }
 
 .story-info{

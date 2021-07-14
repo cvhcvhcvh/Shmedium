@@ -60,7 +60,9 @@ class SessionForm extends React.Component {
 
     const emailInput = this.props.formType === 'Get Started' ? (
       <>
-        <label>Email:
+        <br/>
+        <label className="login-label">Email
+        <br/>
         <input type="text"
           value={this.state.email}
           onChange={this.update('email')}
@@ -81,18 +83,24 @@ class SessionForm extends React.Component {
          <br/>
           {this.renderErrors()}
           <div className="login-form">
-           
-            <label>Username:
+            <div className="login-message">
+            Connect with stories, authors, and trending topics.
+
+            </div>
+            <br/>
+            <label className="login-label">Username
+            <br/>
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
                 className="login-input"
               />
-            
+            <br/>
             </label>
                 <br/>
             {emailInput}
-            <label>Password:
+            <br/>
+            <label className="login-label">Password
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
@@ -101,13 +109,15 @@ class SessionForm extends React.Component {
               <br/>
             </label>
                 <br/>
-            <input className="session-submit" type="submit" value={this.props.formType} />
-            {this.props.formType === 'Sign In' ? 
-                  <button 
-                    onClick={this.demoUserSignin(demoUser)}
-                    className={"inputGroup-formButton"}  
-                  >Demo User</button> : ''} 
-             
+                  <div className="buttons-buttons">
+                    <input className="signin-button" type="submit" value={this.props.formType} />
+                    {this.props.formType === 'Sign In' ? 
+                          <button 
+                            onClick={this.demoUserSignin(demoUser)}
+                            className={"inputGroup-formButton signin-button"} 
+                          >Demo</button> : ''} 
+                  </div>
+                    
              <br/>
             <div>{this.props.otherForm}</div>
           </div>

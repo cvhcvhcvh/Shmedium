@@ -1,5 +1,9 @@
 import { connect } from 'react-redux';
 import SplashPage from './splash_page';
+// import StoryIndex from './story_index';
+import { requestStories } from '../../actions/story_actions';
+import { requestUsers } from '../../actions/user_actions';
+
 
 const mstp = (state) => {
   
@@ -10,9 +14,12 @@ const mstp = (state) => {
   };
 };
 
-const mdtp = dispatch => ({
-  requestStories: (stories) => dispatch(requestStories(stories))
-});
-
+const mdtp = dispatch => {
+  return({
+    requestStories: () => dispatch(requestStories()), 
+    requestUsers: () => dispatch(requestUsers())
+    // removeStory: (storyId) => dispatch(removeStory(storyId))
+  })
+}
 export default connect(mstp, mdtp)(SplashPage);
 

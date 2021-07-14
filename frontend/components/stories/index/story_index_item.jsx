@@ -21,6 +21,10 @@ const StoryIndexItem = (props) => {
                   <br/>
                 subtitle
             </div>
+            {/* <div className="index-item-image">
+              <Link ><img src="https://source.unsplash.com/random" alt="random_photo" />
+              </Link>
+            </div> */}
           </div>
       {/* </div> */}
     </>

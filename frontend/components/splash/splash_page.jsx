@@ -8,11 +8,16 @@ export default class SplashPage extends Component {
 
   
   render() {
+
+    // stories.
+    // // firstSix = 
+    // // sixAfter =
+
     return (
       <>
           
           {!this.props.currentUserId ? <> <header className="home-header">
-            <div className>
+            <div>
               <div className="welcome-message"> 
                 <div className="column">
                     <h1 className="splash-header">Medium is a place to write, read, and connect</h1> 
@@ -30,12 +35,16 @@ export default class SplashPage extends Component {
 
           <div className="trending-div">
             <div className="trending-story-box">
+              {/* <Trending firstSix={firstSix}/> */}
               <Trending/>
+
             </div> 
           </div> </> : null}
           
           <div>
+            {/* <StoryIndexContainer sidxAfter={sixAfter}/> */}
             <StoryIndexContainer/>
+
           </div>
       </>
     )

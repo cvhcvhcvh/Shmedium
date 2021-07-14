@@ -22,7 +22,7 @@ const mdtp = dispatch => {
     otherForm: (
       <>
         <div>Already have an account?</div>
-        <button onClick={() => dispatch(openModal('login'))}>
+        <button className="submit-button" onClick={() => dispatch(openModal('login'))}>
             Login
         </button>
       </>

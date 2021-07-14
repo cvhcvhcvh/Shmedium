@@ -23,7 +23,7 @@ const mdtp = dispatch => {
       <>
         <div>No account?
           <br/>
-          <button onClick={() => dispatch(openModal('signup'))}>Create one</button>
+          <button className="submit-button" onClick={() => dispatch(openModal('signup'))}>Create One</button>
         </div>
       </>
     ),

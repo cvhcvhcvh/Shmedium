@@ -81,11 +81,14 @@
   border: solid 1px red;
   display: flex;
   color: blue;
+  font-size: 30px;
 }
 
 a.shmedium-home-link {
-  font-size: 17px;
+  font-size: 32px;
   right: 20px;
+  align-items: center;
+  font-weight: bold;
 }
 
 // .background-color{
@@ -93,3 +96,6 @@ a.shmedium-home-link {
 //   width: 100%;
 // }
 
+// .black-dot{
+//   height: 40px;
+// }

@@ -15,9 +15,9 @@ const Greeting = ({ currentUser, logout }) => {
                 <a className="shmedium-home-link" href="#">Shmedium</a>
                   <Link to="/"></Link>
                       <div className="nav-buttons-right-logged-out">
-                          <a href="#linkedin">Linkedin</a>
-                          <a href="#github">Github</a>
-                          <a href="#app-academy">App Academy</a>
+                          <a className="nav-words" href="#linkedin">Linkedin</a>
+                          <a className="nav-words" href="#github">Github</a>
+                          <a className="nav-words" href="#app-academy">App Academy</a>
                           <a className="nav-link-login" href="#"onClick={() => dispatch(openModal('login'))}>Sign In</a>
                           <a className="nav-link-signup" href="#" onClick={() => dispatch(openModal('signup'))}
                           >Get Started</a>
@@ -33,14 +33,11 @@ const Greeting = ({ currentUser, logout }) => {
       <div className="splash-home">
         <div className="topnav-logged-in">
           <a className="shmedium-home-link" href="#">Shmedium</a>
-            <Link to="/"></Link>
+            {/* <Link to="/"></Link> */}
                <div className="nav-buttons-right-logged-in"> 
-                    {/* <a href="#linkedin">Linkedin</a>
-                    <a href="#github">Github</a>
-                    <a href="#app-academy">App Academy</a> */}
                     <h2 className="header-name">Hi, {currentUser.username}!</h2>
                     <br/>
-                    <button className="header-button" onClick={logout}>Log Out</button>
+                    <button className="submit-button" onClick={logout}>Log Out</button>
                </div>
         </div>
           <div className="home-index"> 

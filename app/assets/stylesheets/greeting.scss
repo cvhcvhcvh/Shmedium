@@ -40,7 +40,7 @@
 }
 
 .topnav-logged-out a:hover {
-  background-color: rgb(38, 138, 55);
+  background-color: transparent;
   color: white;
   border-radius: 40pc;
 }
@@ -75,13 +75,17 @@
 .nav-buttons-right-logged-in{
   border: solid 1px red;
   display: flex;
+  height: 40px;
+  width: 200px;
+  font-family: helvetica;
+  justify-content: space-around;
 }
 
 .nav-buttons-right-logged-out{
   border: solid 1px red;
   display: flex;
   color: blue;
-  font-size: 30px;
+  font-size: 30
 }
 
 a.shmedium-home-link {
@@ -91,11 +95,21 @@ a.shmedium-home-link {
   font-weight: bold;
 }
 
-// .background-color{
-//   // background-color: #C4E2FF;
-//   width: 100%;
-// }
+a.nav-link-login{
+  font-size: 14px;
+  align-items: center;
+  font-family: helvetica
+}
 
-// .black-dot{
-//   height: 40px;
-// }
+a.nav-link-signup{
+  font-size: 14px;
+  align-items: center;
+  font-family: helvetica
+}
+
+a.nav-words{
+  font-size: 14px;
+  align-items: center;
+  font-family: helvetica
+}
+

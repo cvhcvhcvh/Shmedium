@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ResponseFormContainer from '../../response/response_form_container';
+import ResponseIndexItem from '../../response/response_index_item';
+
+
 
 class StoryShow extends React.Component{
   constructor(props){
@@ -15,6 +19,7 @@ class StoryShow extends React.Component{
   componentDidMount(){
     // debugger 
     this.props.requestUsers()
+    this.props.requestResponses()
     this.props.requestStory(this.props.match.params.storyId)
     .then(() => {
       this.setState({loading: false})
@@ -39,14 +44,28 @@ class StoryShow extends React.Component{
     //   return null
     // }
 
+    // if (this.state.loading){
+    //   return(
+    //       <>
+    //           loading
+    //       </>
+    //   )
+    // } else {
     if (this.state.loading){
-      return(
-          <>
-              loading
-          </>
-      )
-    } else {
-    const { story, user, currentUser } = this.props;
+        return null
+    }
+    
+
+    // const {listing, currentUser, listingId, reviews, deleteReview} = this.props
+    const { story, user, currentUser, deleteResponse, requestResponses, responses } = this.props;
+
+    let responseItems = responses.map(response => {
+            return (
+            <ResponseIndexItem key={response.id} user={user} response={response} deleteResponse={deleteResponse} currentUser={currentUser}/>   
+            )
+        }  
+    )
+    // const { story, user, currentUser } = this.props;
     
     // debugger 
     return(
@@ -63,21 +82,27 @@ class StoryShow extends React.Component{
          
           <br/>
           <br/>
-          <div className="story-show-links">
-            <Link to={`/stories/${this.props.story.id}/edit`}>Edit</Link>
+          <div className="story-button-div">
+            <Link className="story-button" to={`/stories/${this.props.story.id}/edit`}>Edit</Link>
             <br/>
           
-            <button className="submit-button" onClick={this.handleSubmit}>Delete</button>
+            <button className="story-button" onClick={this.handleSubmit}>Delete</button>
             <br/>
-            <Link to={`/stories/new`}>New Story</Link>
+            <Link className="story-button" to={`/stories/new`}>New Story</Link>
             <br/>
-            <Link to={`/`}>Home</Link>
+            <Link className="story-button" to={`/`}>Home</Link>
+            <br/>
           </div>
+        </div>
+
+        <div>
+          <ResponseFormContainer story={story}/>
+            {responseItems}
         </div>
       </>
     )
     }
-  }
+  
 }
 
 export default StoryShow

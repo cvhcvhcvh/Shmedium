@@ -1,18 +1,23 @@
-Median
-Median is a Medium application clone that allows users to publish their own stories. Whether amateur or professional, short or extended, Median is the perfect hub for any form of social journalism.
+# [Shmedium](https://shmedium-app.herokuapp.com/#/)
 
-Click here to visit the website!
+# Shmedium is a clone of Medium using Rails and React that allows users to create an account, publish stories, and read stories by way of following and interacting with other users.  
 
-Technologies
-For the Frontend, Median uses a combination of React for the Framework, Redux for State Management, and ES6 JavaScript to generate a single-page experience for the User. On the Backend it uses the Ruby on Rails framework for Data Management. Lastly, jQuery was used to generate all the AJAX requests to the Backend.
+## Shmedium incorporates a combination React and Redux for UI/UX while maintaining a robust backend framework using Ruby on Rails.  
 
-Features
-User Authentication
-Stories (Posts)
-Responses (Commenting on Stories)
-Follows and Feed
-Claps (Likes)
-User Authentication
-New users can sign-up, existing users can log-in, and logged in users can log-out
-A demo log-in is made accessible for quick guest access to the website
-Certain features become inaccessible without first being logged in (commenting, follows, etc.)
+## MVPs
+* User Authentication 
+* Stories
+* Responses
+* Feed/Follows
+* Claps
+
+## User Authentication
+
+
+<img width="830" alt="Screen Shot 2021-07-16 at 8 13 27 AM" src="https://user-images.githubusercontent.com/77473921/125956834-11bfb07d-66fc-4f38-966f-1fb121a0806d.png">
+
+
+## Stories
+
+## Responses
+

@@ -59,7 +59,7 @@ story5 = Story.create!(
 )
 
 story6 = Story.create!(
-  title: "'So the session cookie has to match up with the user's session cookie...'.",
+  title: "'So the session cookie has to match up with the user's session cookie...'",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 6
 )

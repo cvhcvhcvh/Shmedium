@@ -22,7 +22,7 @@
 * Viewers who are not account users may read stories
 <img width="766" alt="Screen Shot 2021-07-16 at 8 51 29 AM" src="https://user-images.githubusercontent.com/77473921/125958674-45a84fe4-bb06-4f3c-9467-c95f3a83f48d.png">
 * Once logged in, a user may publish stories, edit stories, and delete stories
-* <img width="963" alt="Screen Shot 2021-07-16 at 8 52 57 AM" src="https://user-images.githubusercontent.com/77473921/125958872-d12b1ee2-393e-49f8-be41-fdc67f15075d.png">
+<img width="963" alt="Screen Shot 2021-07-16 at 8 52 57 AM" src="https://user-images.githubusercontent.com/77473921/125958872-d12b1ee2-393e-49f8-be41-fdc67f15075d.png">
 
 ## Responses
 * A user may respond to stories 

@@ -11,7 +11,7 @@ const mstp = state => {
       // updatedAt: ''
       author_id: state.session.id
     }, 
-    formType: "Add Story"
+    formType: ""
   })
 }
 

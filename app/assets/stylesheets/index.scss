@@ -52,7 +52,7 @@ a.author{
 
 .picture{
   display: flex;
-  height: 130px;
+  height: 135px;
   width: 200px;
   // margin: 500px;
   float: right;
@@ -111,4 +111,10 @@ a.author{
   padding-right: 5px;
   background-color: #cfcaca5b;
   border-radius: 40pc;
+}
+
+.who-wrote-this{
+  font-size: 12px;
+  font-family: Helvetica Neue;
+  color: rgb(27, 26, 26);
 }

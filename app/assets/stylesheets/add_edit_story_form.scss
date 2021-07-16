@@ -1,0 +1,90 @@
+
+
+
+.add-story-header{
+  font-size: 80px;
+  color: green;
+  font-family: "Helvetica Neue";
+  font-weight: 800;
+
+}
+
+.add-login-input{
+  border: none;
+  border-bottom: 1px solid grey;
+  &:focus{
+    outline: none;
+  }
+  display: block;
+  border: none;
+  width: 300px;
+  margin: 0 auto 15px auto;
+  border-bottom: 1px solid lightgray;
+  height: 23px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  font-family: -webkit-bodysans-serif;
+  color: rgba(0,0,0,.76);
+  fill: rgba(0,0,0,.76);
+}
+
+.add-login-label {
+  display: block;
+  width: 500px;
+  height: 35px;
+  align-self: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(0,0,0,.56);
+  fill: rgba(0,0,0,.56);
+}
+
+.add-login-label-body {
+  // display: block;
+  // width: 500px;
+  // height: 35px;
+  // align-self: center;
+  // justify-content: center;
+  // margin: 0 auto;
+  // font-size: 15px;
+  // line-height: 24px;
+  // font-weight: 400;
+  // text-align: center;
+  // color: rgba(0,0,0,.56);
+  // fill: rgba(0,0,0,.56);
+}
+
+.add-signin-button{
+  display: inline-block;
+  margin: 15px auto 15px auto;
+  background: rgba(0,0,0,.84);
+  border-color: rgba(0,0,0,.84);
+  color: rgba(255,255,255,.97);
+  height: 37px;
+  line-height: 33px;
+  padding: 0 70px;
+  font-size: 14px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: center;
+  white-space: nowrap;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+.testtt{
+  border: 1px solid red;
+  height: 800px;
+  align-items: center;
+  display: flex;
+}
+

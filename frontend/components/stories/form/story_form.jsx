@@ -35,14 +35,26 @@ class StoryForm extends React.Component {
     return(
       <>
         <form onSubmit={this.handleSubmit}>
-          <h1>{this.props.formType}</h1>
-          <label>Title
-            <input type="text" value={this.state.title} onChange={this.updateTitle}/>
-          </label>
-          <label>Body
-            <textarea value={this.state.body} onChange={this.updateBody}/>
-          </label>
-          <button type="submit">Submit</button>
+          <div className="add-story-wrapper">
+            <div className="add-story-header">
+              <h1>{this.props.formType}</h1>
+            </div>
+            <div className="testtt">
+                <div>
+                  <label className="add-login-label">Title
+                    <input className="add-login-input" type="text" value={this.state.title} onChange={this.updateTitle}/>
+                  </label>
+                </div>
+                <div>
+                  <label className="add-login-label">Body
+                    <input className="add-login-input" type="test" value={this.state.body} onChange={this.updateBody}/>
+                  </label>
+                </div>
+                <div>
+                    <button className="add-signin-button" type="submit">Submit</button>
+                </div>
+            </div>
+          </div>
         </form>
 
       </>

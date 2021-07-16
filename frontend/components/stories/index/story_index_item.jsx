@@ -12,6 +12,7 @@ const StoryIndexItem = (props) => {
       <Link to={`/stories/${props.story.id}`}>Read this story</Link> */}
       {/* <Link to={`/stories/${props.story.id}`}>{props.story.title}</Link> */}
        {/* <div className="home-index"> */}
+       
           <div className="home-index-item">
             <div className="home-index-item-title">
               
@@ -22,9 +23,11 @@ const StoryIndexItem = (props) => {
                       <br/>
                       <p className="splash-sub-header">It's easy and free to post your thinking on any topic and connect with millions of readers.</p>
                      */}
-                     <Link className="title-wrapper"to={`/stories/${props.story.id}`}>
-                          <h1 className="user-item-title">{props.story.title}</h1>
-                     </Link>
+                     <p className="who-wrote-this">App Academy</p>
+                     <br/>
+                          <Link className="title-wrapper"to={`/stories/${props.story.id}`}>
+                                <h1 className="user-item-title">{props.story.title}</h1>
+                          </Link>
                      <br/>
                           <p className="subtitle">Wouldn't it be cool if this was a dynamic subtitle?</p>
                      <br/>

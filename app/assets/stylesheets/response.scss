@@ -1,6 +1,6 @@
 
 .response-form{
-  border: solid 1px red;
+  
   width: 600px;
   display: flex;
   margin: 0 auto;
@@ -19,17 +19,18 @@
 }
 
 .actual-responses{
-  border: solid 1px red;
+  
   display: flex;
   min-width: 500px;
   justify-content: center;
   margin: 0 auto;
   justify-content: space-between;
+  font-family: Helvetica;
 
 }
 
 .actual-response-box{
-  border: solid 1px red;
+  
   display: flex;
   width: 600px;
   height: 100px;
@@ -44,10 +45,9 @@
   height: 50px;
   display: flex;
   align-items: center;
-  // justify-content: space-evenly;
-  border: solid 1px red;
-  width: 750px;
+  width: 700px;
   margin: 0 auto;
-  // padding: 0 20px;
   justify-content: flex-start;
+  padding-bottom: 60px;
+  padding-top: 20px;
 }

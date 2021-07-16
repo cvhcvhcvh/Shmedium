@@ -6,12 +6,13 @@ import SessionForm from './session_form';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
 
-const mstp = ({ errors }) => {
+const mstp = ({ errors }, ownProps) => {
   return {
     errors: errors.session,
     formType: 'Sign In',
     // navLink: <Link to="/signup" style={{ textDecoration: 'none' }}>Get Started</Link>,
-    welcome: "Welcome back."
+    welcome: "Welcome back.", 
+    ownProps
     
   };
 };

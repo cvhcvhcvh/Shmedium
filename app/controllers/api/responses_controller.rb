@@ -1,5 +1,5 @@
 class Api::ResponsesController < ApplicationController
-  before_action :ensure_logged_in
+  # before_action :ensure_logged_in
   before_action :set_response, only: [:show, :update, :destroy]
   
 

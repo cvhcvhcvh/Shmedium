@@ -6,13 +6,13 @@ import SessionForm from './session_form';
 import { openModal } from '../../actions/modal_actions';
 
 
-const mstp = ({ errors }) => {
+const mstp = ({ errors }, ownProps) => {
   return {
     errors: errors.session,
     formType: 'Get Started',
     // navLink: <Link to="/login" style={{ textDecoration: 'none' }}>Sign In</Link>,
-    welcome: "Join Medium."
-    
+    welcome: "Join Medium.",
+    ownProps
   };
 };
 

@@ -33,32 +33,20 @@
 .add-login-label {
   display: block;
   width: 500px;
-  height: 35px;
+  height: 60px;
   align-self: center;
   justify-content: center;
   margin: 0 auto;
-  font-size: 15px;
+  // font-size: 15px;
   line-height: 24px;
   font-weight: 400;
   text-align: center;
   color: rgba(0,0,0,.56);
   fill: rgba(0,0,0,.56);
+  font-size: 42px;
 }
 
-.add-login-label-body {
-  // display: block;
-  // width: 500px;
-  // height: 35px;
-  // align-self: center;
-  // justify-content: center;
-  // margin: 0 auto;
-  // font-size: 15px;
-  // line-height: 24px;
-  // font-weight: 400;
-  // text-align: center;
-  // color: rgba(0,0,0,.56);
-  // fill: rgba(0,0,0,.56);
-}
+
 
 .add-signin-button{
   display: inline-block;

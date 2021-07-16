@@ -7,11 +7,18 @@ class UserShow extends React.Component {
   constructor(props){
     super(props)
 
-    // this.userStory = this.userStory.bind(this)
+    this.state = {
+      loading: true
+    };
   }
+
+
   componentDidMount() {
+    this.props.requestStories()
     this.props.requestUser(this.props.match.params.userId)
-    // this.props.requestStories(stories)
+    .then(() => {
+      this.setState({loading: false})
+    })
   }
 
 
@@ -33,6 +40,9 @@ class UserShow extends React.Component {
   }
   
   render() {
+    if (this.state.loading){
+      return null
+  }
     return(
       <>
         {this.userStory()}

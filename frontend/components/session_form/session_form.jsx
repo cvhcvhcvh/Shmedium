@@ -27,14 +27,17 @@ class SessionForm extends React.Component {
       this.props.action(demoUser)
       .then(() => {
         this.props.closeModal()
-        // this.props.history.push("/")
+        
     })
   }}
 
   handleSubmit(e) {
     e.preventDefault();
     this.props.action(this.state)
-    .then(() => this.props.history.push("/"));
+    .then(() => {
+      this.props.closeModal()
+      
+  })
   }
     
 
@@ -51,6 +54,7 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    
 
     const demoUser = {
       username: "Demo",

@@ -13,10 +13,11 @@
 
 ## User Authentication
 * New users can create an account
-<img width="753" alt="Screen Shot 2021-07-16 at 8 48 28 AM" src="https://user-images.githubusercontent.com/77473921/125958392-c122c1a1-e6f9-45a7-ada0-99f62ad5c42c.png">
 * Existing users can log in to an account
-<img width="753" alt="Screen Shot 2021-07-16 at 8 48 48 AM" src="https://user-images.githubusercontent.com/77473921/125958440-5387c86e-e462-46ea-a04c-fbdba106a070.png">
 * A demo user can be used to browse the features of the site
+
+<img width="753" alt="Screen Shot 2021-07-16 at 8 48 28 AM" src="https://user-images.githubusercontent.com/77473921/125958392-c122c1a1-e6f9-45a7-ada0-99f62ad5c42c.png">
+<img width="753" alt="Screen Shot 2021-07-16 at 8 48 48 AM" src="https://user-images.githubusercontent.com/77473921/125958440-5387c86e-e462-46ea-a04c-fbdba106a070.png">
 
 ## Stories
 * Viewers who are not account users may read stories
@@ -26,9 +27,8 @@
 
 ## Responses
 * A user may respond to stories 
-<img width="830" alt="Screen Shot 2021-07-16 at 8 16 24 AM" src="https://user-images.githubusercontent.com/77473921/125958954-0e4dabfa-cc47-45c7-9792-6f95c78de446.png">
-
 * A user may also delete a response to a story
+<img width="830" alt="Screen Shot 2021-07-16 at 8 16 24 AM" src="https://user-images.githubusercontent.com/77473921/125958954-0e4dabfa-cc47-45c7-9792-6f95c78de446.png">
 <img width="830" alt="Screen Shot 2021-07-16 at 8 17 10 AM" src="https://user-images.githubusercontent.com/77473921/125958966-b0cc5f9e-2dd7-494d-aa96-93f815a34415.png">
 
 

@@ -46,11 +46,11 @@ class StoryForm extends React.Component {
                   </label>
                 </div>
                 <div>
-                  <label className="add-login-label">Body
+                  <label className="add-login-label-body">Body
                     <input className="add-login-input" type="test" value={this.state.body} onChange={this.updateBody}/>
                   </label>
                 </div>
-                <div>
+                <div className="add-story-button">
                     <button className="add-signin-button" type="submit">Submit</button>
                 </div>
             </div>

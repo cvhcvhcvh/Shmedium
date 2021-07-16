@@ -37,7 +37,7 @@ export default class SplashPage extends Component {
           <div className="trending-div">
             <div className="trending-story-box">
               {/* <Trending firstSix={firstSix}/> */}
-              <Trending/>
+              {/* <Trending/> */}
 
             </div> 
           </div> </> : null}

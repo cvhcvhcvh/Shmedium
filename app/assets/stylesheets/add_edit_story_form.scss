@@ -44,7 +44,28 @@
   color: rgba(0,0,0,.56);
   fill: rgba(0,0,0,.56);
   font-size: 42px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
+
+.add-login-label-body {
+  display: block;
+  width: 500px;
+  height: 60px;
+  align-self: center;
+  justify-content: center;
+  margin: 0 auto;
+  // font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(0,0,0,.56);
+  fill: rgba(0,0,0,.56);
+  font-size: 42px;
+  padding-bottom: 100px;
+  // padding-top: 100px;
+}
+
 
 
 
@@ -73,6 +94,9 @@
   border: 1px solid red;
   height: 800px;
   align-items: center;
-  display: flex;
+  // display: flex;
 }
 
+.add-story-button{
+  display: flex;
+}

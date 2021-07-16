@@ -29,121 +29,183 @@ Story.delete_all
 Story.connection.execute('ALTER SEQUENCE stories_id_seq RESTART WITH 1')
 
 story1 = Story.create!(
-  title: "To be, or not to be: that is the question.",
+  title: "I was watching Fast & Furious 5...",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 1
 )
 
 story2 = Story.create!(
-  title: "This above all: to thine own self be true.",
+  title: "I Lowkey Had Like Nine Hot Dogs Last Night",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 2
 )
 
 story3 = Story.create!(
-  title: "Though this be madness, yet there is method in it.",
+  title: "I guess I'm Not Part of the Family",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 3
 )
 
 story4 = Story.create!(
-  title: "That it should come to this!",
+  title: "The Street's Always Win",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 4
 )
 
 story5 = Story.create!(
-  title: "There is nothing either good or bad, but thinking makes it so.",
+  title: "How Do I Reseed My Heroku Database?",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 5
 )
 
 story6 = Story.create!(
-  title: "The lady doth protest too much, methinks.",
+  title: "'So the session cookie has to match up with the user's session cookie...'.",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 6
 )
 
 story7 = Story.create!(
-  title: "In my mind's eye.",
+  title: "Let's Go to the Mall...TODAY!",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 7
 )
 
 story8 = Story.create!(
-  title: "A little more than kin, and less than kind.",
+  title: "Ted is Such a Mess.",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 8
 )
 
 story9 = Story.create!(
-  title: "The play 's the thing wherein I'll catch the conscience of the king.",
+  title: "Ali is Big Boy",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 9
 )
 
 story10 = Story.create!(
-  title: "And it must follow, as the night the day, thou canst not then be false to any man.",
+  title: "Are You That Guy?  Absolutely.",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 10
 )
 
 story11 = Story.create!(
-  title: "Brevity is the soul of wit.",
+  title: "Who's Cobie Smulders Married To?",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 1
 )
 
 story12 = Story.create!(
-  title: "Doubt that the sun doth move, doubt truth to be a liar, but never doubt I love.",
+  title: "This is the Real Deal:  I Have No Idea What I'm Doing",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 2
 )
 
 story13 = Story.create!(
-  title: "Rich gifts wax poor when givers prove unkind.",
+  title: "Having Fun is What It's All About.",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 3
 )
 
 story14 = Story.create!(
-  title: "Do you think I am easier to be played on than a pipe?",
+  title: "I Don't Care 'Cuz All My Friend's Are Gonna Be There",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 4
 )
 
 story15 = Story.create!(
-  title: "I will speak daggers to her, but use none.",
+  title: "Anyway, Back to the Dexter Thing...",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 5
 )
 
 story16 = Story.create!(
-  title: "When sorrows come, they come not single spies, but in battalions.",
+  title: "Oh Yeah, She Played His Sister.",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 6
 )
 
 story17 = Story.create!(
-  title: "Can one desire too much of a good thing?",
+  title: "Wow, She Has a Powerful Jaw Line.",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 7
 )
 
 story18 = Story.create!(
-  title: "I like this place and willingly could waste my time in it.",
+  title: "You Should Get That Checked Out, Raph, That Looks serious.",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 8
 )
 
 story19 = Story.create!(
-  title: "How bitter a thing it is to look into happiness through another man's eyes!",
+  title: "Does Anybody Watch Ted Lasso?",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 9
 )
 
 story20 = Story.create!(
-  title: "True is it that we have seen better days.",
+  title: "Yeah That Didn't Work.  Back to the Lab with That One, Buddy.",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 10
 )
+
+story21 = Story.create!(
+  title: "If I want to Add a Border Bottom, What Does That Mean?",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 6
+)
+
+story22 = Story.create!(
+  title: "Wait, Why Don't You Have ownProps...?  I'm So Confused.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 3
+)
+
+story23 = Story.create!(
+  title: "It's Gotta Be Your Container, Look at the Parent.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 5
+)
+
+story24 = Story.create!(
+  title: "Guys, Why is My Footer Not Working.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 5
+)
+
+story25 = Story.create!(
+  title: "Good Good, Everything Broke.  Welp, Time for Bed.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 2
+)
+
+story26 = Story.create!(
+  title: "Why Does This Not Work, but When I Do This...  Oh, I forgot the Class Name.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 10
+)
+
+story27 = Story.create!(
+  title: "OMG, that Robin Sparkles Song is Stuck in My Head.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 10
+)
+
+story28 = Story.create!(
+  title: "I Want to Go to Canada.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 7
+)
+
+story29 = Story.create!(
+  title: "That's Someone I Networked With.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 4
+)
+
+story30 = Story.create!(
+  title: "Ooooh, Let's Look at My Boy's Portfolio.",
+  body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
+  author_id: 8
+)
+
+

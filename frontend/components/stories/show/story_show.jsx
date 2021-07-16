@@ -75,7 +75,7 @@ class StoryShow extends React.Component{
             <div className="buffer">
             </div>
             <h1 className="story-title">{story.title}</h1>
-              <p className="story-show-subtitle">Make sure to double-check your pull request for these things before you submit</p>
+              <p className="story-show-subtitle">Make sure to double-check your pull requests for these things before you submit.</p>
               <br/>
             <Link className="author" to={`/users/${story.author_id}`}>{user.username}</Link>
             <br/>

@@ -31,4 +31,7 @@
 <img width="830" alt="Screen Shot 2021-07-16 at 8 16 24 AM" src="https://user-images.githubusercontent.com/77473921/125958954-0e4dabfa-cc47-45c7-9792-6f95c78de446.png">
 <img width="830" alt="Screen Shot 2021-07-16 at 8 17 10 AM" src="https://user-images.githubusercontent.com/77473921/125958966-b0cc5f9e-2dd7-494d-aa96-93f815a34415.png">
 
-
+## Future Features
+* Feed
+* Follows
+* Claps

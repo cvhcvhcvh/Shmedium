@@ -15,9 +15,9 @@ const Greeting = ({ currentUser, logout }) => {
                 <a className="shmedium-home-link" href="#">Shmedium</a>
                   <Link to="/"></Link>
                       <div className="nav-buttons-right-logged-out">
-                          <a className="nav-words" href="#linkedin">Linkedin</a>
-                          <a className="nav-words" href="#github">Github</a>
-                          <a className="nav-words" href="#app-academy">App Academy</a>
+                          <a className="nav-words" href="https://www.linkedin.com">Linkedin</a>
+                          <a className="nav-words" href="https://www.github.com">Github</a>
+                          <a className="nav-words" href="https://www.fullstackacademy.com">App Academy</a>
                           <a className="nav-link-login" href="#"onClick={() => dispatch(openModal('login'))}>Sign In</a>
                           <a className="nav-link-signup" href="#" onClick={() => dispatch(openModal('signup'))}
                           >Get Started</a>

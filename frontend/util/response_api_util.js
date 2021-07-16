@@ -21,6 +21,16 @@ export const createResponse = response => (
   })
 )
 
+export const updateResponse = (response) => {
+  return(
+    $.ajax({
+      method: "PATCH",
+      url: `api/responses/${response.id}`, 
+      data: {response}
+    })
+  )
+}
+
 export const deleteResponse = responseId => (
   $.ajax({
       method: 'delete',

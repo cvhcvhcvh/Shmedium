@@ -32,13 +32,21 @@ class ResponseForm extends React.Component {
   render(){
     
     return(
-      <>
-       <form onSubmit={this.handleSubmit}action="">
-          <textarea onChange={this.updateBody} value={this.state.body}/>
-            <input type="submit" />
+      <> 
+        <br/>
+        <div className="response-form">
+          
+          <form onSubmit={this.handleSubmit} action="">
+              <textarea className="textarea" onChange={this.updateBody} value={this.state.body}/>
+                <input className="submit-button" type="submit" value="Respond" />
 
 
-       </form>
+          </form>
+
+        </div>
+          <div className="response-feed-header">
+            <h1>Responses</h1>
+          </div>
 
       </>
     )

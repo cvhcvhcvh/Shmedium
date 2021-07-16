@@ -15,16 +15,38 @@ const StoryIndexItem = (props) => {
           <div className="home-index-item">
             <div className="home-index-item-title">
               
-                      <Link to={`/stories/${props.story.id}`}>
-                            <h1 className="user-item-title">{props.story.title}</h1>
-                      </Link>
-                  <br/>
-                subtitle
+              <div className="home-stories"> 
+                  <div className="column-stories">
+                    {/* <br/>
+                      <h1 className="splash-header">Medium is a place to write, read, and connect</h1> 
+                      <br/>
+                      <p className="splash-sub-header">It's easy and free to post your thinking on any topic and connect with millions of readers.</p>
+                     */}
+                     <Link className="title-wrapper"to={`/stories/${props.story.id}`}>
+                          <h1 className="user-item-title">{props.story.title}</h1>
+                     </Link>
+                     <br/>
+                          <p className="subtitle">Wouldn't it be cool if this was a dynamic subtitle?</p>
+                     <br/>
+                          <div className="subtitle-subs">
+                            <br/>
+                            <p className="date">Dec 28</p>
+                            <br/>
+                            <p className="date">2 min read</p>
+                            <br/>
+                            <p className="genre">Nonfiction</p>
+                          </div>
+                  </div>
+                  <div className="column-picture-2">
+                      {/* <img className="quote-pic" src={window.quote} alt="quote-pic" /> */}
+                      <div className="index-item-image">
+                        <Link to={`/stories/${props.story.id}`}><img className="picture" src="https://source.unsplash.com/random" alt="random_photo" />
+                        </Link>
+                      </div>
+
+                  </div>
+                </div>
             </div>
-            {/* <div className="index-item-image">
-              <Link ><img src="https://source.unsplash.com/random" alt="random_photo" />
-              </Link>
-            </div> */}
           </div>
       {/* </div> */}
     </>

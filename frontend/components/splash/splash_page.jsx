@@ -20,14 +20,15 @@ export default class SplashPage extends Component {
             <div>
               <div className="welcome-message"> 
                 <div className="column">
+                  <br/>
                     <h1 className="splash-header">Medium is a place to write, read, and connect</h1> 
                     <br/>
                     <p className="splash-sub-header">It's easy and free to post your thinking on any topic and connect with millions of readers.</p>
                     {/* <Link to="/" style={{ textDecoration: 'none' }}className="header-link">
                     </Link> */}
                 </div>
-                <div className="column">
-                    <p>image</p>
+                <div className="column-picture">
+                    <img className="quote-pic" src={window.quote} alt="quote-pic" />
                 </div>
               </div>
             </div>

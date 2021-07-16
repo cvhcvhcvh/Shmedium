@@ -1,5 +1,7 @@
 class Api::ResponsesController < ApplicationController
   before_action :ensure_logged_in
+  before_action :set_response, only: [:show, :update, :destroy]
+  
 
   def index #
     @responses = Response.all
@@ -17,11 +19,13 @@ class Api::ResponsesController < ApplicationController
     end
   end
 
-  # def index 
-  #   @users = User.all
-  #   render :index
-    
-  # end
+  def update
+    if @response.update(response_params)
+      render :show
+    else
+      render json: @response.errors.full_messages, status: :unprocessable_entity
+    end
+  end
   
   def show
     @response = Response.find(params[:id])
@@ -44,4 +48,11 @@ class Api::ResponsesController < ApplicationController
   def response_params
     params.require(:response).permit(:body, :author_id, :story_id)
   end
+
+  def set_response
+    @response = Response.find(params[:id])
+  rescue
+    render json: ['Reponse not found'], status: :not_found
+  end
+
 end

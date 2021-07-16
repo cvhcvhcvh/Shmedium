@@ -72,13 +72,24 @@ class StoryShow extends React.Component{
       <>
         <div className="story-show-item">
           <div className="story-info">
-            <h1>{story.title}</h1>
+            <div className="buffer">
+            </div>
+            <h1 className="story-title">{story.title}</h1>
+              <p className="story-show-subtitle">Make sure to double-check your pull request for these things before you submit</p>
+              <br/>
+            <Link className="author" to={`/users/${story.author_id}`}>{user.username}</Link>
             <br/>
-            <Link to={`/users/${story.author_id}`}>{user.username}</Link>
+            <div className="buffer">
+            </div>
+              <div className="show-item-image">
+                <img className="show-picture" src="https://source.unsplash.com/random" alt="random_photo" />
+                
+              </div>
+            <br/>
             <br/>
           </div>
           <br/>
-          <p>{story.body}</p>
+          <p className="story-body">{story.body}</p>
          
           <br/>
           <br/>

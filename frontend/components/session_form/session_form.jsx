@@ -81,7 +81,11 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="login-form-box">
         <h1 className="welcome-heading">{this.props.welcome}</h1>
          <br/>
-          {this.renderErrors()}
+          <li className="errors-messages">
+            {this.renderErrors()}
+          </li>
+          <br/>
+            
           <div className="login-form">
             <div className="login-message">
             Connect with stories, authors, and trending topics.

@@ -10,6 +10,7 @@
 class Story < ApplicationRecord
   validates :title, :body, presence: true
 
+  has_one_attached :photo
 
   belongs_to :author,
     primary_key: :id,

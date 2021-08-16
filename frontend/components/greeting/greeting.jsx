@@ -11,9 +11,9 @@ const Greeting = ({ currentUser, logout }) => {
   const loggedOut = () => (
    
         <div className="splash-home-logged-out">
-              <div className="topnav-logged-out">
-                <a className="shmedium-home-link" href="#">Shmedium</a>
-                  <Link to="/"></Link>
+              {/* <div className="topnav-logged-out"> */}
+                {/* <a className="shmedium-home-link" href="#">Shmedium</a> */}
+                  <Link to="/" className="shmedium-home-link">Shmedium</Link>
                       <div className="nav-buttons-right-logged-out">
                           <a className="nav-words" href="https://www.linkedin.com">Linkedin</a>
                           <a className="nav-words" href="https://www.github.com">Github</a>
@@ -23,7 +23,7 @@ const Greeting = ({ currentUser, logout }) => {
                           >Get Started</a>
                       </div>
 
-              </div>
+              {/* </div> */}
             <div className="home-index">
               {/* <SplashPage/> */}
             </div>

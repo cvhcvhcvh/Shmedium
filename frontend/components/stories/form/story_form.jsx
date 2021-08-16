@@ -12,7 +12,7 @@ class StoryForm extends React.Component {
     this.updateBody = this.updateBody.bind(this);
 
   }
-
+  
   handleSubmit(e){
     e.preventDefault();
     this.props.action(this.state)

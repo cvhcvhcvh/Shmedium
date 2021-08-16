@@ -29,7 +29,7 @@ Story.delete_all
 Story.connection.execute('ALTER SEQUENCE stories_id_seq RESTART WITH 1')
 
 story1 = Story.create!(
-  title: "I was watching Fast & Furious 5...",
+  title: "I Was watching Fast & Furious 5...",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 1
 )
@@ -41,7 +41,7 @@ story2 = Story.create!(
 )
 
 story3 = Story.create!(
-  title: "I guess I'm Not Part of the Family",
+  title: "I Guess I'm Not Part of the Family",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 3
 )

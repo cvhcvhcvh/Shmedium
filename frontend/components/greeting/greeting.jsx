@@ -15,13 +15,14 @@ const Greeting = ({ currentUser, logout }) => {
         <div className="splash-home-logged-out">
               {/* <div className="topnav-logged-out"> */}
                 {/* <a className="shmedium-home-link" href="#">Shmedium</a> */}
-                <div className="test-test-test">
+      
                   <Link to="/" className="shmedium-home-link">Shmedium</Link>
+                <div className="blank">
+                 
                 </div>
                 <div className="nav-buttons-right-logged-out">
                     <a className="nav-words" href="https://www.linkedin.com">Linkedin</a>
                     <a className="nav-words" href="https://www.github.com">Github</a>
-                    <a className="nav-words" href="https://www.fullstackacademy.com">App Academy</a>
                     <a className="nav-link-login" href="#"onClick={() => dispatch(openModal('login'))}>Sign In</a>
                     <a className="nav-link-signup" href="#" onClick={() => dispatch(openModal('signup'))}
                     >Get Started</a>

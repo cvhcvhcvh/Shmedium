@@ -6,7 +6,31 @@
   height: 75px;
   display: flex;
   align-items: center;
+  
+  
 }
+
+// #navbar {
+//   overflow: hidden;
+  
+// }
+
+
+// .content {
+//   padding: 16px;
+// }
+
+// .sticky {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   padding-top: 60px;
+// }
+
+// .sticky + .content {
+//   padding-top: 60px;
+// }
+
 
 .topnav-logged-out {
   background-color: white;
@@ -40,9 +64,13 @@
   padding: 0 20px;
   margin: 0 auto;
   align-items: center;
+  // position: fixed;
+  // top: 0;
+
+
   
   
-  // justify-content: space-between;
+  // justifycontent: space-between;
 
   a {
     // float: left;

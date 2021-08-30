@@ -10,7 +10,7 @@ import { openModal } from '../../actions/modal_actions';
 const Greeting = ({ currentUser, logout }) => {
   const loggedOut = () => (
     <>
-      <div className="header-background">
+      <div id="sticky" className="header-background">
 
         <div className="splash-home-logged-out">
               {/* <div className="topnav-logged-out"> */}

@@ -59,15 +59,13 @@ class StoryShow extends React.Component{
     // const {listing, currentUser, listingId, reviews, deleteReview} = this.props
     const { story, user, currentUser, deleteResponse, requestResponses, responses } = this.props;
 
-    let responseItems = responses.map(response => {
+    let responseItems = responses.filter(response => response.story_id === this.props.story.id).map(response => {
             return (
             <ResponseIndexItem key={response.id} user={user} response={response} deleteResponse={deleteResponse} currentUser={currentUser}/>   
             )
         }  
     )
-    // const { story, user, currentUser } = this.props;
-    
-    // debugger 
+ 
     return(
       <>
         <div className="story-show-item">
@@ -107,7 +105,7 @@ class StoryShow extends React.Component{
         </div>
 
         <div>
-          <ResponseFormContainer story={story}/>
+          <ResponseFormContainer story={story} currentUser={currentUser}/>
             {responseItems}
         </div>
       </>

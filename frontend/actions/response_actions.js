@@ -33,7 +33,7 @@ export const requestResponses = () => dispatch => {
   )
 }
   
-export const requestRespsonse = (responseId) => dispatch => {
+export const requestResponse = (responseId) => dispatch => {
   return(
     ResponseAPIUtil.requestResponse(responseId)
     .then(response => dispatch(receiveResponse(response)))

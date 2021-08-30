@@ -3,6 +3,8 @@ import { Link, withRouter } from 'react-router-dom';
 
 const StoryIndexItem = (props) => {
    
+ 
+ 
   
   return(
     
@@ -34,6 +36,9 @@ const StoryIndexItem = (props) => {
                           <div className="subtitle-subs">
                             <br/>
                             <p className="date">Dec 28</p>
+                            <p>
+                              
+                            </p>
                             <br/>
                             <p className="date">2 min read</p>
                             <br/>

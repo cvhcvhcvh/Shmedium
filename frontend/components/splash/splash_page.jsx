@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react'
 import StoryIndexContainer from '../stories/index/story_index_container';
-import Trending from '../trending/trending_index';
+import TrendingIndexItem from '../trending/trending_index_item';
 
 
 export default class SplashPage extends Component {
@@ -9,11 +9,12 @@ export default class SplashPage extends Component {
   
   render() {
 
-    // stories.
-    // // firstSix = 
-    // // sixAfter =
+    const { stories } = this.props
 
+  
+    console.log(stories)
     return (
+      
       <>
           
           {!this.props.currentUserId ? <> <header className="home-header">
@@ -35,10 +36,25 @@ export default class SplashPage extends Component {
           </header> 
 
           <div className="trending-div">
+            <div className="trending-on">
+              <p>TRENDING ON SHMEDIUM</p>
+            </div>
             <div className="trending-story-box">
               {/* <Trending firstSix={firstSix}/> */}
-              <Trending/>
-              {/* <p>test test test</p> */}
+              
+              
+              {stories.map((story)=>{
+                
+                  if (story.id > 7 && story.id < 15) {
+                    
+                    return(
+                      
+                        <TrendingIndexItem key={story.id} story={story}/>
+                      
+                    )
+                  }
+                })}
+              
 
             </div> 
           </div> </> : null}

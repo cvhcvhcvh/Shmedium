@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import StoryShow from './story_show';
 import { requestStory, deleteStory } from '../../../actions/story_actions';
 import { requestUsers } from '../../../actions/user_actions';
-import {deleteResponse, requestResponses} from '../../../actions/response_actions';
+import {deleteResponse, requestResponses, requestResponse} from '../../../actions/response_actions';
 
 
 const mstp = (state, ownProps) => {
@@ -15,7 +15,7 @@ const mstp = (state, ownProps) => {
     user: user,
     currentUser: state.session.id, //
     responses: Object.values(state.entities.responses)
-    
+
   })
 }
 
@@ -25,7 +25,8 @@ const mdtp = dispatch => {
     requestUsers: () => dispatch(requestUsers()), 
     action: (storyId) => dispatch(deleteStory(storyId)), 
     deleteResponse: (responseId) => dispatch(deleteResponse(responseId)), 
-    requestResponses: () => dispatch(requestResponses())
+    requestResponses: () => dispatch(requestResponses()), 
+    requestResponse: (responseId) => dispatch(requestResponse(responseId))
     
   })
 }

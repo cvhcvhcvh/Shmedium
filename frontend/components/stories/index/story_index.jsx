@@ -28,7 +28,6 @@ class StoryIndex extends React.Component{
           })}
             
         </div>
-          {/* <Link to={`/stories/new`}>New Story</Link> */}
       </>
     )
   }

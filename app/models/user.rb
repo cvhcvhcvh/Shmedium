@@ -28,6 +28,16 @@ class User < ApplicationRecord
     foreign_key: :author_id,
     class_name: :Response
 
+  has_many :likes, 
+    primary_key: :id,
+    foreign_key: :liker_id, 
+    class_name: :Like
+
+  has_many :liked_stories, 
+    through: :likes, 
+    source: :story
+  
+
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
     if user && user.is_password?(password)

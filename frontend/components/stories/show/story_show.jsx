@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LikeButton from '../../like_button/like_button';
 import ResponseFormContainer from '../../response/response_form_container';
 import ResponseIndexItem from '../../response/response_index_item';
 
@@ -88,7 +89,7 @@ class StoryShow extends React.Component{
           </div>
           <br/>
           <p className="story-body">{story.body}</p>
-         
+            <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/>
           <br/>
           <br/>
           <div className="story-button-div">

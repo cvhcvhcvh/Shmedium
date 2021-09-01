@@ -3,6 +3,7 @@ import SplashPage from './splash_page';
 // import StoryIndex from './story_index';
 import { requestStories } from '../../actions/story_actions';
 import { requestUsers } from '../../actions/user_actions';
+// import LikeButton from '../like_button/like_button';
 
 
 const mstp = (state) => {

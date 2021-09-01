@@ -11,6 +11,8 @@ import UpdateStoryContainer from './stories/form/update_story_container';
 import StoryShowContainer from './stories/show/story_show_container';
 import UserShowContainer from './users/user_show_container';
 import SplashPageContainer from './splash/splash_page_container';
+import LikeButton from './like_button/like_button';
+
 
 
 const App = () => (
@@ -18,7 +20,7 @@ const App = () => (
     <Modal />
     <GreetingContainer />
     {/* <SplashPage/> */}
-    
+    {/* <LikeButton/> */}
     
 
     <Switch>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-// import StoryIndexContainer from '../stories/index/story_index_container';
+import LikeButton from '../like_button/like_button';
 
 
 
@@ -33,6 +33,7 @@ export default class TrendingIndexItem extends React.Component {
                             <p className="date">2 min read</p>
                             <br/>
                             <p className="genre">Nonfiction</p>
+                            <LikeButton/>
                           </div>
                   </div>
           

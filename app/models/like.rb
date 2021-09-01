@@ -10,3 +10,5 @@ class Like < ApplicationRecord
     foreign_key: :story_id,
     class_name: :Story
 end
+
+

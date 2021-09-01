@@ -1,4 +1,4 @@
-class Api::likesController < ApplicationController
+class Api::LikesController < ApplicationController
   # before_action :ensure_logged_in
   # before_action :set_like, only: [:show, :update, :destroy]
   
@@ -14,14 +14,17 @@ class Api::likesController < ApplicationController
   end
 
   def destroy
-    @like = Like.find(params[:id])
+    @like = Like.find_by(like_params)
 
-    if @like.destroy
-        render :show
-    else 
-        render json: @like.errors.full_messages, status: 403
+    @like.destroy
+      render json: {}
+  end
+
+  def show #
+    @like = Like.find_by(like_params)
+    if @like
+      render :show  
     end
-
   end
 
   private

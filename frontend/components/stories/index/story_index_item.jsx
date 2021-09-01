@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import LikeButton from '../../like_button/like_button';
+
 
 const StoryIndexItem = (props) => {
    
@@ -43,6 +45,7 @@ const StoryIndexItem = (props) => {
                             <p className="date">2 min read</p>
                             <br/>
                             <p className="genre">Nonfiction</p>
+                            {/* <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> */}
                           </div>
                   </div>
                   <div className="column-picture-2">

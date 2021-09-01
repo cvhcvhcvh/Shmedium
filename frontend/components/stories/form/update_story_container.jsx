@@ -17,6 +17,7 @@ class EditStoryForm extends React.Component {
   render() {
    
     const { action, formType, story } = this.props;
+    // console.warn(this.props.ownProps)
 
  
     if (!story) return null;
@@ -34,7 +35,8 @@ class EditStoryForm extends React.Component {
 const mstp = (state, ownProps) => {
   return({
     story: state.entities.stories[ownProps.match.params.storyId], 
-    formType: "Update Story"
+    formType: "Update Story", 
+    ownProps: ownProps
   })
 }
 

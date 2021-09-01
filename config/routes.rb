@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :stories, only: [:create, :show, :index, :destroy, :update]
     resource :session, only: [:create, :destroy, :show, :new]
     resources :responses, only: [:create, :show, :update, :index, :destroy]
+    resources :likes 
   end
 
   root to: "static_pages#root"

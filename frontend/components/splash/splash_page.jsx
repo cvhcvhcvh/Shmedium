@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import React, { Component } from 'react'
 import StoryIndexContainer from '../stories/index/story_index_container';
 import TrendingIndexItem from '../trending/trending_index_item';
+import LikeButton from '../like_button/like_button';
+
 
 
 export default class SplashPage extends Component {

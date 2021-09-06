@@ -33,7 +33,7 @@ export default class TrendingIndexItem extends React.Component {
                             <p className="date">2 min read</p>
                             <br/>
                             <p className="genre">Nonfiction</p>
-                            <LikeButton/>
+                            {/* <LikeButton/> */}
                           </div>
                   </div>
           

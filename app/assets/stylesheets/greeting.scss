@@ -1,11 +1,12 @@
 @import "variables/fonts.scss";
 
-.header-background{
+#sticky.header-background{
   border-bottom: 1px solid black;
   background-color: #C4E2FF;
   height: 75px;
   display: flex;
   align-items: center;
+  position: sticky; top: 0;
   
   
 }

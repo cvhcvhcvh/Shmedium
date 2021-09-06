@@ -17,6 +17,29 @@
 
 }
 
+.welcome-message-button{
+  display: inline-block;
+  margin: 15px auto 15px auto;
+  background: white;
+  color: black;
+  height: 37px;
+  line-height: 33px;
+  // padding: 0 70px;
+  font-size: 16px;
+  border-radius: 20px;
+  // text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: center;
+  white-space: nowrap;
+  letter-spacing: 0;
+  // font-weight: 400;
+  font-style: normal; 
+  width: 132px;
+  overflow: hidden;
+  word-wrap:break-word;
+}
+
 .home-header{
   width: 100%;
   background-color: #C4E2FF;
@@ -43,6 +66,7 @@
   font-size: 70px;
   width: 550px;
   margin: 0 auto;
+  font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .splash-sub-header{
@@ -58,7 +82,7 @@
 .trending-div{
   border-bottom: solid 1px rgb(221, 221, 221);
   height: 344px;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 16px;
  
 }
@@ -120,4 +144,9 @@
   margin-bottom: 16px;
   font-family: Arial, Helvetica, sans-serif;
   height: 30px;
+}
+
+.trending-arrow{
+  padding-right: 5px;
+  
 }

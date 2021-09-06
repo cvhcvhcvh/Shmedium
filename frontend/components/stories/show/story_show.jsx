@@ -58,7 +58,7 @@ class StoryShow extends React.Component{
     
 
     // const {listing, currentUser, listingId, reviews, deleteReview} = this.props
-    const { story, user, currentUser, deleteResponse, requestResponses, responses } = this.props;
+    const { story, storyId, user, currentUser, deleteResponse, requestResponses, responses } = this.props;
 
     let responseItems = responses.filter(response => response.story_id === this.props.story.id).map(response => {
             return (
@@ -81,8 +81,10 @@ class StoryShow extends React.Component{
             <div className="buffer">
             </div>
               <div className="show-item-image">
-                <img className="show-picture" src="https://source.unsplash.com/random" alt="random_photo" />
-                
+                {
+                  <img className="show-picture" src={story.photo_url} alt="" /> 
+           
+                }
               </div>
             <br/>
             <br/>

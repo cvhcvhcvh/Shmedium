@@ -11,7 +11,7 @@ const StoryIndexItem = (props) => {
   return(
     
     <>
-      
+      {console.log(props.story)}
       {/* <p>{props.story.title}</p>
       <Link to={`/stories/${props.story.id}`}>Read this story</Link> */}
       {/* <Link to={`/stories/${props.story.id}`}>{props.story.title}</Link> */}
@@ -48,11 +48,17 @@ const StoryIndexItem = (props) => {
                             {/* <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> */}
                           </div>
                   </div>
+                  <div>
+                    
+                  </div>
                   <div className="column-picture-2">
                       {/* <img className="quote-pic" src={window.quote} alt="quote-pic" /> */}
                       <div className="index-item-image">
-                        <Link to={`/stories/${props.story.id}`}><img className="picture" src="https://source.unsplash.com/random" alt="random_photo" />
+                        <Link to={`/stories/${props.story.id}`}>
+                          {/* <img className="picture" src="https://source.unsplash.com/random" alt="random_photo" /> */}
+                          {<img className="picture" src={props.story.photo_url} alt="" /> }
                         </Link>
+
                       </div>
 
                   </div>

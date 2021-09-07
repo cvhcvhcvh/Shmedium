@@ -5,18 +5,9 @@ import LikeButton from '../../like_button/like_button';
 
 const StoryIndexItem = (props) => {
    
- 
- 
-  
   return(
     
     <>
-      {console.log(props.story)}
-      {/* <p>{props.story.title}</p>
-      <Link to={`/stories/${props.story.id}`}>Read this story</Link> */}
-      {/* <Link to={`/stories/${props.story.id}`}>{props.story.title}</Link> */}
-       {/* <div className="home-index"> */}
-       
           <div className="home-index-item">
             <div className="home-index-item-title">
               

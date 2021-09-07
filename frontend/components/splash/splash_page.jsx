@@ -8,6 +8,8 @@ import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 
 
 
+
+
 export default class SplashPage extends Component {
 
   
@@ -15,8 +17,6 @@ export default class SplashPage extends Component {
 
     const { stories } = this.props
 
-  
-    console.log(stories)
     return (
       
       <>
@@ -53,7 +53,7 @@ export default class SplashPage extends Component {
               
               {stories.map((story)=>{
                 
-                  if (story.id > 7 && story.id < 15) {
+                  if (story.id > 7 && story.id < 14) {
                     
                     return(
                       
@@ -67,11 +67,12 @@ export default class SplashPage extends Component {
             </div> 
           </div> </> : null}
           
-          <div>
-            {/* <StoryIndexContainer sidxAfter={sixAfter}/> */}
-            <StoryIndexContainer/>
-
+          <div className="splash-index">
+            <div className="discover">
+              <StoryIndexContainer/>
+            </div>
           </div>
+          
       </>
     )
   }

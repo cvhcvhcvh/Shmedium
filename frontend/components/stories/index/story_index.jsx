@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Discover from '../../discover/discover';
 import StoryIndexItem from './story_index_item';
-
 
 
 class StoryIndex extends React.Component{
@@ -25,9 +25,13 @@ class StoryIndex extends React.Component{
               
               <StoryIndexItem key={story.id} story={story}/>
             )
-          })}
-            
+          })}   
         </div>
+        <div className="discover">
+            <Discover/>
+        </div>
+       
+      
       </>
     )
   }

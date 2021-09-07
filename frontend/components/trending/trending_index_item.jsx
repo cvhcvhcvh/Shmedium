@@ -10,7 +10,7 @@ export default class TrendingIndexItem extends React.Component {
 
     return (
       <>
-      
+
                 <div className="column-stories">
                     {/* <br/>
                       <h1 className="splash-header">Medium is a place to write, read, and connect</h1> 

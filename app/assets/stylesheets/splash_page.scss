@@ -100,6 +100,10 @@
   // padding-top: 40px;
 }
 
+.trending-on-shmedium{
+  letter-spacing: .5px;
+}
+
 .story{
   border: solid 1px blue;
   height: 100px;
@@ -133,6 +137,7 @@
 }
 .logo-pic{
   height: 25px;
+  padding-right: 10px;
 }
 
 .trending-on{
@@ -157,4 +162,5 @@
 
 .trending-logo-author{
   display: flex;
+  align-items: center;
 }

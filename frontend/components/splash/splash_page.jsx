@@ -45,7 +45,7 @@ export default class SplashPage extends Component {
           <div className="trending-div">
             <div className="trending-on">
               <div className="trending-arrow"><FontAwesomeIcon icon={faChartLine} /></div>
-                <p>TRENDING ON SHMEDIUM</p>
+                <p className="trending-on-shmedium">TRENDING ON SHMEDIUM</p>
             </div>
             <div className="trending-story-box">
               {/* <Trending firstSix={firstSix}/> */}

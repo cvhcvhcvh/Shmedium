@@ -18,23 +18,27 @@ const StoryIndexItem = (props) => {
                       <br/>
                       <p className="splash-sub-header">It's easy and free to post your thinking on any topic and connect with millions of readers.</p>
                      */}
-                     <p className="who-wrote-this">App Academy</p>
-                     <br/>
+                     <div className="trending-logo-author"> 
+                      <img className="logo-pic" src={window.logo} alt="logo-pic" />
+                    
+                       <p className="who-wrote-this">App Academy</p>
+                     </div>
+                     
                           <Link className="title-wrapper"to={`/stories/${props.story.id}`}>
                                 <h1 className="user-item-title">{props.story.title}</h1>
                                 <br/>
                           </Link>
                           
-                     <br/>
+                     
                           <p className="subtitle">Wouldn't it be cool if this was a dynamic subtitle?</p>
-                     <br/>
+                     
                           <div className="subtitle-subs">
                             <br/>
                             <p className="date">Dec 28</p>
                             <p>
                               
                             </p>
-                            <br/>
+                            
                             <p className="date">2 min</p>
                             <br/>
                             <p className="genre">Nonfiction</p>

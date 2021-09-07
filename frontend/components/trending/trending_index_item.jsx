@@ -17,24 +17,24 @@ export default class TrendingIndexItem extends React.Component {
                       <br/>
                       <p className="splash-sub-header">It's easy and free to post your thinking on any topic and connect with millions of readers.</p>
                      */}
-                     <p className="who-wrote-this">App Academy</p>
-                     
-                        <Link className="story" to={`/stories/${this.props.story.id}`}>
-                            {this.props.story.title}     
-                        </Link>
+                    <div className="trending-logo-author">
+                      <img className="logo-pic" src={window.logo} alt="logo-pic" />
+                    
+                      <p className="who-wrote-this">App Academy</p>
+                    </div>
+                    <Link className="story" to={`/stories/${this.props.story.id}`}>
+                        {this.props.story.title}     
+                    </Link>
         
-                          <div className="subtitle-subs">
-                            <br/>
-                            <p className="date">Dec 28</p>
-                            <p>
-                              
-                            </p>
-                            <br/>
-                            <p className="date">2 min read</p>
-                            <br/>
-                            <p className="genre">Nonfiction</p>
-                            {/* <LikeButton/> */}
-                          </div>
+                    <div className="subtitle-subs">
+                      <br/>
+                      <p className="date">Dec 28</p>
+                      <br/>
+                      <p className="date">2 min</p>
+                      <br/>
+                      <p className="genre">Nonfiction</p>
+                      {/* <LikeButton/> */}
+                    </div>
                   </div>
           
       </>

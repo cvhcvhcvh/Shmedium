@@ -109,6 +109,7 @@
   font-weight: bold;
   text-decoration: none;
   color: black;
+  margin-bottom: 100px;
 }
 
 .column-picture{
@@ -130,6 +131,9 @@
   padding-left: 100px;
 
 }
+.logo-pic{
+  height: 25px;
+}
 
 .trending-on{
   border: solid 1px red;
@@ -149,4 +153,8 @@
 .trending-arrow{
   padding-right: 5px;
   
+}
+
+.trending-logo-author{
+  display: flex;
 }

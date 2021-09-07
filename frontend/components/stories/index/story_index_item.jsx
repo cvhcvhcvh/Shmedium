@@ -22,7 +22,9 @@ const StoryIndexItem = (props) => {
                      <br/>
                           <Link className="title-wrapper"to={`/stories/${props.story.id}`}>
                                 <h1 className="user-item-title">{props.story.title}</h1>
+                                <br/>
                           </Link>
+                          
                      <br/>
                           <p className="subtitle">Wouldn't it be cool if this was a dynamic subtitle?</p>
                      <br/>
@@ -33,7 +35,7 @@ const StoryIndexItem = (props) => {
                               
                             </p>
                             <br/>
-                            <p className="date">2 min read</p>
+                            <p className="date">2 min</p>
                             <br/>
                             <p className="genre">Nonfiction</p>
                             {/* <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> */}

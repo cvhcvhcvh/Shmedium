@@ -28,9 +28,9 @@ export default class TrendingIndexItem extends React.Component {
         
                     <div className="subtitle-subs">
                       <br/>
-                      <p className="date">Dec 28</p>
+                      <p className="date">Dec 28 •</p>
                       <br/>
-                      <p className="date">2 min</p>
+                      <p className="date">2 min •</p>
                       <br/>
                       <p className="genre">Nonfiction</p>
                       {/* <LikeButton/> */}

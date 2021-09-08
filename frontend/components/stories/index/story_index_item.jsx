@@ -34,12 +34,12 @@ const StoryIndexItem = (props) => {
                      
                           <div className="subtitle-subs">
                             <br/>
-                            <p className="date">Dec 28</p>
+                            <p className="date">Dec 28  • </p>
                             <p>
                               
                             </p>
                             
-                            <p className="date">2 min</p>
+                            <p className="date">2 min  • </p>
                             <br/>
                             <p className="genre">Nonfiction</p>
                             {/* <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> */}

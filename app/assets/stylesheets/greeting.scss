@@ -11,6 +11,10 @@
   
 }
 
+.home-logo{
+  height: 40px;
+  width: 40px
+}
 // #navbar {
 //   overflow: hidden;
   
@@ -152,6 +156,7 @@
   font-size: 60px;
   justify-content: space-around;
   flex: .8;
+  align-items: center;
 }
 
 a.shmedium-home-link {
@@ -161,6 +166,7 @@ a.shmedium-home-link {
   font-weight: 400;
   // padding-left: 65px;
   // padding-right: 50px;
+  padding-bottom: 12px;
 }
 
 a.nav-link-login{
@@ -172,7 +178,16 @@ a.nav-link-login{
 a.nav-link-signup{
   font-size: 14px;
   align-items: center;
-  font-family: helvetica
+  font-family: helvetica;
+  background-color: black;
+  color: white;
+  border-radius: 70px;
+  // height: 30px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px
 }
 
 a.nav-words{

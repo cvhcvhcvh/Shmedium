@@ -36,6 +36,7 @@ a.home-index-item-title{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   padding-top: 10px;
+  padding-bottom: 8px;
   a{
     text-decoration: none;
   }
@@ -66,6 +67,7 @@ a.author{
 .subtitle{
   color: #757575;
   font-size: 16px;
+  padding-bottom: 5px;
 }
 
 .bookmark-pic{
@@ -81,6 +83,7 @@ a.author{
 .column-stories{
   flex: 50%;
   width: 500px;
+  padding-bottom: 30px;
 }
 
 .column-picture-2{

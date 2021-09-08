@@ -26,10 +26,8 @@ const StoryIndexItem = (props) => {
                      
                           <Link className="title-wrapper"to={`/stories/${props.story.id}`}>
                                 <h1 className="user-item-title">{props.story.title}</h1>
-                                <br/>
                           </Link>
-                          
-                     
+          
                           <p className="subtitle">Wouldn't it be cool if this was a dynamic subtitle?</p>
                      
                           <div className="subtitle-subs">

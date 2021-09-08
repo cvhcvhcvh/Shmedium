@@ -15,8 +15,10 @@ const Greeting = ({ currentUser, logout }) => {
         <div className="splash-home-logged-out">
               {/* <div className="topnav-logged-out"> */}
                 {/* <a className="shmedium-home-link" href="#">Shmedium</a> */}
-      
-                  <Link to="/" className="shmedium-home-link">Shmedium</Link>
+
+                
+                  <Link to="/" className="shmedium-home-link"><img className="home-logo" src={window.home} alt="quote-pic" />Shmedium
+                  </Link>
                 <div className="blank">
                  
                 </div>

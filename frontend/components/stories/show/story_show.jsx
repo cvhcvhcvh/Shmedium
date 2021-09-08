@@ -91,7 +91,12 @@ class StoryShow extends React.Component{
           </div>
           <br/>
           <p className="story-body">{story.body}</p>
-            <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/>
+            {currentUser ? 
+
+          <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> : null }
+
+
+
           <br/>
           <br/>
           <div className="story-button-div">

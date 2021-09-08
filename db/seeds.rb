@@ -44,7 +44,7 @@ story1.photo.attach(io: story1photo, filename: "seal.jpeg")
 # bad_habits.photo.attach(io: bad_habits_thumbnail, filename: "Bad_Habits.jpg")
 
 story2 = Story.create!(
-  title: "I Lowkey Had Like Nine Hot Dogs Last Night",
+  title: "I Had Like Nine Hot Dogs Last Night",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 2
 )

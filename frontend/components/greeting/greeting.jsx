@@ -44,7 +44,7 @@ const Greeting = ({ currentUser, logout }) => {
   const loggedIn = () => (
       <div className="splash-home">
         <div className="topnav-logged-in">
-          <a className="shmedium-home-link" href="#">Shmedium</a>
+          <a className="shmedium-home-link" href="#"><img className="home-logo" src={window.home} alt="quote-pic" />Shmedium</a>
             {/* <Link to="/"></Link> */}
                <div className="nav-buttons-right-logged-in"> 
                     <h2 className="header-name">Hi, {currentUser.username}!</h2>

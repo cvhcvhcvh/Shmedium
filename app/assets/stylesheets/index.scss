@@ -3,6 +3,7 @@
   // border: solid 1px red;
   font-size: 16px;
   margin-left: 120px;
+  padding-top: 5px
 }
 
 .home-index-item{
@@ -20,6 +21,31 @@
   margin: 0 auto;
   // flex-direction: column;
   
+}
+
+img.home-logo{
+  padding-left: 15px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: green;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  overflow: hidden;
 }
 
 a.home-index-item-title{

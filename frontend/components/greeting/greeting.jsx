@@ -47,8 +47,17 @@ const Greeting = ({ currentUser, logout }) => {
           <a className="shmedium-home-link" href="#"><img className="home-logo" src={window.home} alt="quote-pic" />Shmedium</a>
             {/* <Link to="/"></Link> */}
                <div className="nav-buttons-right-logged-in"> 
-                    <h2 className="header-name">Hi, {currentUser.username}!</h2>
-                    <br/>
+                    <a className="login-write" href="#/stories/new">Write</a>
+                      
+                      
+                      {/* Hi, {currentUser.username}! */}
+                    {/* <img className="home-logo" src={window.login} alt="quote-pic"/> */}
+                    
+                    <div className="dropdown">
+                      <span> <img className="home-logo" src={window.login} alt="quote-pic"/></span>
+                      <p className="dropdown-content">Log Out</p>
+                    </div>
+                    
                     <button className="submit-button" onClick={logout}>Log Out</button>
                </div>
         </div>

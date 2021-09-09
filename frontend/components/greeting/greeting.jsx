@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { openModal } from '../../actions/modal_actions';
-// import SplashPage from '../splash/splash_page';
-// import StoryIndexContainer from '../stories/index/story_index_container';
+import Header from '../header/header';
 
 
 
@@ -10,17 +9,15 @@ import { openModal } from '../../actions/modal_actions';
 const Greeting = ({ currentUser, logout }) => {
   const loggedOut = () => (
     <>
+    <Header/>
       <div id="sticky" className="header-background">
-
         <div className="splash-home-logged-out">
               {/* <div className="topnav-logged-out"> */}
                 {/* <a className="shmedium-home-link" href="#">Shmedium</a> */}
 
-                
                   <Link to="/" className="shmedium-home-link"><img className="home-logo" src={window.home} alt="quote-pic" />Shmedium
                   </Link>
                 <div className="blank">
-                 
                 </div>
                 <div className="nav-buttons-right-logged-out">
                     <a className="nav-words" href="https://www.linkedin.com">Linkedin</a>
@@ -29,18 +26,11 @@ const Greeting = ({ currentUser, logout }) => {
                     <a className="nav-link-signup" href="#" onClick={() => dispatch(openModal('signup'))}
                     >Get Started</a>
                 </div>
-
-              {/* </div> */}
-            {/* <div className="home-index"> */}
-              {/* <SplashPage/> */}
-            {/* </div> */}
         </div>
       </div>
-
-
-      
       </>
   );
+
   const loggedIn = () => (
       <div className="splash-home">
         <div className="topnav-logged-in">

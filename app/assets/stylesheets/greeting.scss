@@ -3,7 +3,7 @@
 #sticky.header-background{
   border-bottom: 1px solid black;
   background-color: #C4E2FF;
-  height: 75px;
+  // height: 75px;
   display: flex;
   align-items: center;
   position: sticky; top: 0;
@@ -61,16 +61,17 @@
 .splash-home-logged-out{
   // width: 100%;
   background-color: #C4E2FF;
-  align-items: center;
+  // align-items: center;
   display: flex;
   justify-content: space-between;
   width: 65%;
-  height: 65px;
-  padding: 0 20px;
-  margin: 0 auto;
+  height: 68px;
+  // padding: 0 20px;
+  // margin: 0 auto;
   align-items: center;
   // position: fixed;
   // top: 0;
+  margin-left: 290px;
 
 
   
@@ -140,10 +141,10 @@
   align-items: center;
   justify-content: space-between;
   // width: 60%;
-  height: 65px;
+  // height: 65px;
   // padding: 0 20px;
   // margin: 0 auto;
-  padding-left: 280px;
+  padding-left: 285px;
   padding-right: 355px;
  
 }

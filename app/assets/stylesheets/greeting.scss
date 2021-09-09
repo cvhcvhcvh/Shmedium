@@ -128,9 +128,9 @@
 }
 
 .topnav-logged-in a:hover {
-  background-color: rgb(38, 138, 55);
-  color: white;
-  border-radius: 40pc;
+  // background-color: rgb(38, 138, 55);
+  // color: white;
+  // border-radius: 40pc;
 }
 
 .topnav-logged-in {
@@ -139,10 +139,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 68%;
+  // width: 60%;
   height: 65px;
-  padding: 0 20px;
-  margin: 0 auto;
+  // padding: 0 20px;
+  // margin: 0 auto;
+  padding-left: 280px;
+  padding-right: 355px;
  
 }
 
@@ -153,6 +155,7 @@
   width: 200px;
   font-family: helvetica;
   justify-content: space-around;
+  align-items: center;
 }
 
 .nav-buttons-right-logged-out {
@@ -171,6 +174,7 @@ a.shmedium-home-link {
   // padding-left: 65px;
   // padding-right: 50px;
   padding-bottom: 12px;
+  color: black
 }
 
 a.nav-link-login{

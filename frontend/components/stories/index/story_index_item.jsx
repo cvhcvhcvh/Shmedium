@@ -30,7 +30,7 @@ const StoryIndexItem = (props) => {
           
                           <p className="subtitle">Wouldn't it be cool if this was a dynamic subtitle?</p>
                      
-                          <div className="subtitle-subs">
+                          <div className="subtitle-subs-index">
                             <br/>
                             <p className="date">Dec 28  • </p>
                             <p>

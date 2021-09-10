@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom';
 import { openModal } from '../../actions/modal_actions';
 import Header from '../header/header';
 
-
-
-
 const Greeting = ({ currentUser, logout }) => {
+
   const loggedOut = () => (
     <>
-    <Header/>
+    
       <div id="sticky" className="header-background">
         <div className="splash-home-logged-out">
               {/* <div className="topnav-logged-out"> */}
@@ -33,6 +31,7 @@ const Greeting = ({ currentUser, logout }) => {
 
   const loggedIn = () => (
       <div className="splash-home">
+      <div>
         <div className="topnav-logged-in">
           <a className="shmedium-home-link" href="#"><img className="home-logo" src={window.home} alt="quote-pic" />Shmedium</a>
             {/* <Link to="/"></Link> */}
@@ -54,7 +53,9 @@ const Greeting = ({ currentUser, logout }) => {
           <div className="home-index"> 
             {/* <StoryIndexContainer/> */}
           </div>
+          </div>
       </div>
+
   );
 
   return currentUser ? loggedIn() : loggedOut();

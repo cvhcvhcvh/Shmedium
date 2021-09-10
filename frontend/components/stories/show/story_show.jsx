@@ -70,14 +70,41 @@ class StoryShow extends React.Component{
     return(
       <>
         <div className="story-show-item">
+          <br/>
           <div className="story-info">
+            <br/>
             <div className="buffer">
             </div>
             <h1 className="story-title">{story.title}</h1>
               <p className="story-show-subtitle">Make sure to double-check your pull requests for these things before you submit.</p>
               <br/>
-            <Link className="author" to={`/users/${story.author_id}`}>{user.username}</Link>
-            <br/>
+                <div className="story-show-story-info">
+                  <img className="logo-pic" src={window.logo} alt="logo-pic" />
+                  <Link className="author" to={`/users/${story.author_id}`}>{user.username}</Link>
+                  <div className="subtitle-subs">
+                      <br/>
+                      <p className="date">Dec 28 •</p>
+                      <br/>
+                      <p className="date">2 min •</p>
+                      <br/>
+                      <p className="genre">Nonfiction</p>
+                      <div className="heart">
+                        {currentUser ? 
+
+                          <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> : null }
+                      </div>
+                      <div className="story-show-subtitle-links">
+                        {/* <img className="logo-pic" src={window.github} alt="logo-pic" />
+                        <img className="logo-pic" src={window.linkedin} alt="logo-pic" /> */}
+
+                        <a href="https://www.linkedin.com/in/cvhcvh/"> <img className="logo-pic" src={window.linkedin} alt="logo-pic" /></a>
+                        <a href="https://github.com/cvhcvhcvh"> <img className="logo-pic" src={window.github} alt="logo-pic" /></a>
+
+                      </div>
+
+                    </div>
+                </div>
+              <br/>
             <div className="buffer">
             </div>
               <div className="show-item-image">
@@ -91,12 +118,7 @@ class StoryShow extends React.Component{
           </div>
           <br/>
           <p className="story-body">{story.body}</p>
-            {currentUser ? 
-
-          <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> : null }
-
-
-
+           
           <br/>
           <br/>
           <div className="story-button-div">

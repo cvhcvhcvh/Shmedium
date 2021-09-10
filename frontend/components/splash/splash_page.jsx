@@ -7,12 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 
 
-
-
-
 export default class SplashPage extends Component {
 
-  
   render() {
 
     const { stories } = this.props

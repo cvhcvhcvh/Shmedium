@@ -40,7 +40,7 @@ class LikeButton extends React.Component{
     return(
     <>
     {/* {console.log(this.props)}       */}
-      <button onClick={this.toggleButton}>
+      <button className="heart-background" onClick={this.toggleButton}>
         {this.state.liked ? 
           <div className="heart-liked" ><FontAwesomeIcon icon={faHeart} /></div>
         : <div className="heart-disliked" ><FontAwesomeIcon icon={faHeart} /></div>

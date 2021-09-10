@@ -1,46 +1,51 @@
-import React from "react";
+import React from 'react'
 
-export default class Header extends React.Component {
-  constructor(props) {
-    super(props);
+export default class Header extends React.Component{
+  state = {
+    color: 'white'
+  }
 
-    this.listener = null;
-    this.state = {
-      status: "top"
-    };
+  listenScrollEvent = e => {
+    if (window.scrollY > 400) {
+      this.setState({color: 'black'})
+    } else {
+      this.setState({color: 'white'})
+    }
   }
 
   componentDidMount() {
-    this.listener = document.addEventListener("scroll", (e) => {
-      var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 400) {
-        if (this.state.status !== "hey") {
-          this.setState({ status: "hey" });
-        }
-      } else {
-        if (this.state.status !== "top") {
-          this.setState({ status: "top" });
-        }
-      }
-    });
-  }
-
-  componentDidUpdate() {
-    document.removeEventListener("scroll", this.listener);
+    window.addEventListener('scroll', this.listenScrollEvent)
   }
 
   render() {
-    return (
-      <p
-        style={{
-          backgroundColor: this.state.status === "top" ? "red" : "green",
-          color: this.state.status === "top" ? "white" : "blue",
-          position: "fixed"
-        }}
-      >
-        Amir
-      </p>
-    );
-  }
-}
+    return(
+      <div>
+        <div id="header">
+          <h1 style={{color: this.state.color}}>
+            This is the header
+          </h1>
+       </div>
+       <div id="section_1" className="section">
+          This is section 1
+       </div>
 
+       <div id="section_2" className="section">
+          This is section 2
+       </div>
+
+       <div id="section_3" className="section">
+          This is section 3
+       </div>
+
+       <div id="section_4" className="section">
+          This is section 4
+       </div>
+
+       <div id="section_5" className="section">
+          This is section 5
+       </div>
+
+     </div>
+     )
+   }
+}

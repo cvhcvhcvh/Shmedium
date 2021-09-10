@@ -129,6 +129,10 @@ class SessionForm extends React.Component {
                     
              <br/>
             <div>{this.props.otherForm}</div>
+            <br/>
+            <br/>
+
+            <div className="modal-by-clicking">By clicking you agree to Shmedium’s Terms of Service and acknowledge that Shmedium’s Privacy Policy applies to you.</div>
           </div>
         </form>
       </div>

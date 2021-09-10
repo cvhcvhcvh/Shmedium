@@ -2,12 +2,12 @@
 
 .story-show-item{
   // border: solid 1px red;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  // background-color: white;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
   // justify-content: space-between;
-  width: 800px;
+  width: 45%;
   height: 200%;
   padding: 0 20px;
   margin: 0 auto;
@@ -71,6 +71,7 @@ a.story-button{
   display: flex;
   height: 10%;
   justify-content: space-between;
+  color: white
 }
 
 .story-title{
@@ -127,3 +128,25 @@ a.author{
   font-family: Helvetica, arial,;
 }
 
+.login-to-post{
+
+}
+
+.story-show-story-info{
+  display: flex;
+  align-items: center;
+}
+
+.heart{
+  padding-left: 30px;
+  
+}
+
+.heart-background{
+  background: rgb(189, 189, 189)
+}
+
+.story-show-subtitle-links{
+  padding-left: 300px;
+  cursor: pointer;
+}

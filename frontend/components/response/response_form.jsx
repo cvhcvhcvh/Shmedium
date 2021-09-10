@@ -44,7 +44,7 @@ class ResponseForm extends React.Component {
               <input className="submit-button" type="submit" value="Respond" />
           </form>
           : 
-          <p>Login to post comments</p>
+          <p className="login-to-post">Login to respond</p>
           }
 
         </div>

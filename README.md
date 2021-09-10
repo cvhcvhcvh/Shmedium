@@ -8,7 +8,7 @@
 * User Authentication 
 * Stories
 * Responses
-* Feed/Follows
+* AWS
 * Claps
 
 ## User Authentication
@@ -31,7 +31,9 @@
 <img width="830" alt="Screen Shot 2021-07-16 at 8 16 24 AM" src="https://user-images.githubusercontent.com/77473921/125958954-0e4dabfa-cc47-45c7-9792-6f95c78de446.png">
 <img width="830" alt="Screen Shot 2021-07-16 at 8 17 10 AM" src="https://user-images.githubusercontent.com/77473921/125958966-b0cc5f9e-2dd7-494d-aa96-93f815a34415.png">
 
-## Future Features
-* Feed
-* Follows
-* Claps
+## Claps
+* Viewers must be logged in to clap, or 'like', a story
+<img width="1792" alt="Screen Shot 2021-09-09 at 11 03 27 PM" src="https://user-images.githubusercontent.com/77473921/132797999-42935fa9-d772-4823-99b8-5b5da39631b0.png">
+
+## AWS
+* AWS is used to seed the database with pictures for each individual story

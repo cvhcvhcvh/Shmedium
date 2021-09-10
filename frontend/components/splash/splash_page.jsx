@@ -5,6 +5,7 @@ import TrendingIndexItem from '../trending/trending_index_item';
 import LikeButton from '../like_button/like_button';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
+import { openModal } from '../../actions/modal_actions';
 
 
 export default class SplashPage extends Component {

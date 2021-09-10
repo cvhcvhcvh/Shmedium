@@ -42,15 +42,17 @@ class ResponseForm extends React.Component {
           
             <textarea className="textarea" onChange={this.updateBody} value={this.state.body}/>
               <input className="submit-button" type="submit" value="Respond" />
+              
           </form>
           : 
           <p className="login-to-post">Login to respond</p>
           }
 
         </div>
-          <div className="response-feed-header">
+        
+          {/* <div className="response-feed-header">
             <h1>Responses</h1>
-          </div>
+          </div> */}
 
       </>
     )

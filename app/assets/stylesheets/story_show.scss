@@ -26,6 +26,7 @@
   background-color: transparent;
   border: none;
   font-size: 14px;
+  padding-top: 20px;
   &:hover{
     cursor: pointer;
   }
@@ -91,8 +92,8 @@ a.author{
 }
 
 .story-body{
-  font-size: 24px;
-  color: #292929;
+  font-size: 22px;
+  color: #323232;
   width: 750px;
   padding-bottom: 50px;
 }
@@ -143,7 +144,8 @@ a.author{
 }
 
 .heart-background{
-  background: rgb(189, 189, 189)
+  background: rgb(189, 189, 189);
+  cursor: pointer
 }
 
 .story-show-subtitle-links{

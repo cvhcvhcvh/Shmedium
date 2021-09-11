@@ -152,3 +152,59 @@ a.author{
   padding-left: 300px;
   cursor: pointer;
 }
+
+.story-show-footer{
+  height: 250px;
+  border: 1px solid red;
+  background-color: #191919;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: block;
+} 
+
+.story-show-footer-content{
+  display: flex;
+  justify-content: center;
+  border: 1px solid blue;
+  height: 200px;
+  border-bottom: 1px solid white;
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+.story-show-footer-1{
+  color:#FAFAFA;
+  padding-left: 250px;
+  padding-right: 250px;
+  border: 1px solid green
+  
+}
+.story-show-footer-3{
+  color: #FAFAFA;
+  display: flex;
+  
+}
+
+.font{
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  padding-bottom: 15px;
+  width: 50%
+  // flex: 1;
+  
+}
+
+.font2{
+  font-size: 14px;
+  color: #BABABA;
+  font-family: "Helvetica Neue";
+  flex: 1;
+  padding-right: 45px
+
+}
+
+.story-show-footer-4{
+  display: flex
+}
+

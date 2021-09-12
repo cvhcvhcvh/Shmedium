@@ -73,11 +73,10 @@ class StoryShow extends React.Component{
           <br/>
           <div className="story-info">
             <br/>
-            <div className="buffer">
-            </div>
+          
             <h1 className="story-title">{story.title}</h1>
               <p className="story-show-subtitle">Make sure to double-check your pull requests for these things before you submit.</p>
-              <br/>
+              
                 <div className="story-show-story-info">
                   <img className="logo-pic" src={window.logo} alt="logo-pic" />
                   <Link className="author" to={`/users/${story.author_id}`}>{user.username}</Link>
@@ -105,8 +104,7 @@ class StoryShow extends React.Component{
                     </div>
                 </div>
               <br/>
-            <div className="buffer">
-            </div>
+    
               <div className="show-item-image">
                 {
                   <img className="show-picture" src={story.photo_url} alt="" /> 
@@ -114,9 +112,9 @@ class StoryShow extends React.Component{
                 }
               </div>
             <br/>
-            <br/>
+           
           </div>
-          <br/>
+        
           <p className="story-body">{story.body}</p>
            
           <br/>

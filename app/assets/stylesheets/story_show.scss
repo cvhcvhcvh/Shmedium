@@ -95,12 +95,13 @@ a.author{
   font-size: 22px;
   color: #323232;
   width: 750px;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
 }
 
 .show-item-image{
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
   // max-height: 700px;
 }
 
@@ -136,6 +137,7 @@ a.author{
 .story-show-story-info{
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .heart{
@@ -155,7 +157,7 @@ a.author{
 
 .story-show-footer{
   height: 250px;
-  border: 1px solid red;
+
   background-color: #191919;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -165,9 +167,9 @@ a.author{
 .story-show-footer-content{
   display: flex;
   justify-content: center;
-  border: 1px solid blue;
+  
   height: 200px;
-  border-bottom: 1px solid white;
+  // border-bottom: 1px solid #BABABA;
   margin-left: 64px;
   margin-right: 64px;
 }
@@ -176,7 +178,7 @@ a.author{
   color:#FAFAFA;
   padding-left: 250px;
   padding-right: 250px;
-  border: 1px solid green
+  
   
 }
 .story-show-footer-3{

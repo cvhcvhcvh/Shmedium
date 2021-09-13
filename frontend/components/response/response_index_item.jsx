@@ -2,7 +2,6 @@ import React from 'react';
 import LikeButton from '../like_button/like_button';
 
 
-
 const ResponseIndexItem = props => {
   return(
     <div className="actual-response-box">

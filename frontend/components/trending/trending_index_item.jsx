@@ -8,20 +8,9 @@ export default class TrendingIndexItem extends React.Component {
   constructor(props){
     super(props)
   }
-
-  // numbers(){
-  //   if (this.props.story.id === 8) {
-  //     return({
-        
-  //     })
-  //   }
-  // }
-
   
   render() {
-    {console.log(this.props.story)}
-
-
+   
 
     return (
       <>

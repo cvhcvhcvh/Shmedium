@@ -129,12 +129,36 @@ class StoryShow extends React.Component{
             <br/>
             <Link className="story-button" to={`/`}>Home</Link>
             <br/>
+            
           </div>
         </div>
-
+              
         <div>
           <ResponseFormContainer story={story} currentUser={currentUser}/>
-            {responseItems}
+            {responseItems} 
+        </div>
+        <div className="story-show-footer">
+          <div className="story-show-footer-content">
+            <div className="story-show-footer-1"> 
+              <div className="story-show-footer-2">
+                <div className="story-show-footer-3">
+                  <p className="font">Learn more.</p>
+                  
+                  <p className="font">Make Shmedium yours.</p>
+                  
+                  <p className="font">Write a story on Shmedium.</p>
+                 
+                </div>
+                <div className="story-show-footer-4">
+                  <p className="font2">Shmedium is an open platform where 170 million readers come to find insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Learn more</p>
+                  <p className="font2">Follow the writers, publications, and topics that matter to you, and you’ll see them on your homepage and in your inbox. Explore</p>
+                  <p className="font2">If you have a story to tell, knowledge to share, or a perspective to offer — welcome home. It’s easy and free to post your thinking on any topic. Start a blog</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
         </div>
       </>
     )

@@ -151,12 +151,12 @@ a.author{
 }
 
 .story-show-subtitle-links{
-  padding-left: 300px;
+  padding-left: 455px;
   cursor: pointer;
 }
 
 .story-show-footer{
-  height: 250px;
+  // height: 250px;
 
   background-color: #191919;
   padding-top: 60px;
@@ -210,3 +210,7 @@ a.author{
   display: flex
 }
 
+.border-bottom{
+  border-bottom: 1px solid grey;
+  padding-bottom: 50px;
+}

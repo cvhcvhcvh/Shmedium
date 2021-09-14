@@ -157,11 +157,22 @@ class StoryShow extends React.Component{
                     <p className="font2">If you have a story to tell, knowledge to share, or a perspective to offer — welcome home. It’s easy and free to post your thinking on any topic. Start a blog</p>
                   </div>
                 </div>
-
+              </div>
+              <div>
               </div>
             </div>
           </div>
-        
+           <div className="shmedium-home-link-footer">
+            <Link to="/" className="shmedium-home-link-footer">Shmedium
+            </Link>
+            
+              <div className="shmedium-footer-about-box">
+                  <p className="shmedium-footer-about">About</p>
+                  <p className="shmedium-footer-about">Write</p>
+                  <p className="shmedium-footer-about">Help</p>
+                  <p className="shmedium-footer-about">Legal</p>
+              </div>
+           </div>
         </div>
       </>
     )

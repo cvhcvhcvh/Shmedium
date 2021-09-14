@@ -214,3 +214,40 @@ a.author{
   border-bottom: 1px solid grey;
   padding-bottom: 50px;
 }
+
+
+
+.shmedium-home-link-footer{
+  display: flex;
+  align-items: center;
+}
+
+a.shmedium-home-link-footer {
+  font-size: 32px;
+  // right: 20px;
+  align-items: center;
+  font-weight: 400;
+  // padding-left: 65px;
+  // padding-right: 50px;
+  // padding-bottom: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  letter-spacing: -2px;
+  padding-left: 314px;
+}
+
+.shmedium-footer-about{
+  color: white;
+  font-family: "Helvetica Neue";
+  flex: 1;
+  padding-right: 10px
+}
+
+.shmedium-footer-about-box{
+  display: flex;
+  padding-left: 400px;
+  position: absolute;
+  right: 0;
+  padding-right: 325px;
+
+}

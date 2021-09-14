@@ -90,15 +90,24 @@
 
 .trending-story-box{
   // border: solid 1px red;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
+  // width: 65%;
+  // height: 90%;
+  // // padding: 0 20px;
+  // margin: 0 auto;
+  // font-size: 30px;
+  // padding-top: 40px;
+  display: grid;
+  /* flex-wrap: wrap; */
+  align-content: space-evenly;
   align-items: center;
   width: 65%;
   height: 90%;
-  // padding: 0 20px;
   margin: 0 auto;
   font-size: 30px;
-  // padding-top: 40px;
+  grid-template-columns: auto auto auto;
 }
 
 .trending-on-shmedium{

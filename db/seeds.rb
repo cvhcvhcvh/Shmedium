@@ -92,7 +92,7 @@ story7photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+p
 story7.photo.attach(io: story7photo, filename: "seal.jpeg")
 
 story8 = Story.create!(
-  title: "Ted is Such a Mess.",
+  title: "Ted is Such a Mess",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 8
 )
@@ -108,7 +108,7 @@ story9photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+p
 story9.photo.attach(io: story9photo, filename: "seal.jpeg")
 
 story10 = Story.create!(
-  title: "Are You That Guy?  Absolutely.",
+  title: "Are You That Guy?",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 10
 )
@@ -124,7 +124,7 @@ story11photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story11.photo.attach(io: story11photo, filename: "seal.jpeg")
 
 story12 = Story.create!(
-  title: "This is the Real Deal:  I Have No Idea What I'm Doing",
+  title: "I Like Your Pizza More",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 2
 )
@@ -132,7 +132,7 @@ story12photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story12.photo.attach(io: story12photo, filename: "seal.jpeg")
 
 story13 = Story.create!(
-  title: "Having Fun is What It's All About.",
+  title: "Having Fun is What It's All About",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 3
 )
@@ -156,7 +156,7 @@ story15photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story15.photo.attach(io: story15photo, filename: "seal.jpeg")
 
 story16 = Story.create!(
-  title: "Oh Yeah, She Played His Sister.",
+  title: "Oh Yeah, She Played His Sister",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 6
 )
@@ -164,7 +164,7 @@ story16photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story16.photo.attach(io: story16photo, filename: "seal.jpeg")
 
 story17 = Story.create!(
-  title: "Wow, She Has a Powerful Jaw Line.",
+  title: "Wow, She Has a Powerful Jaw Line",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 7
 )
@@ -172,7 +172,7 @@ story17photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story17.photo.attach(io: story17photo, filename: "seal.jpeg")
 
 story18 = Story.create!(
-  title: "You Should Get That Checked Out, Raph, That Looks serious.",
+  title: "You Should Get That Checked Out, Raph, That Looks serious",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 8
 )
@@ -188,7 +188,7 @@ story19photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story19.photo.attach(io: story19photo, filename: "seal.jpeg")
 
 story20 = Story.create!(
-  title: "Yeah That Didn't Work.  Back to the Lab with That One, Buddy.",
+  title: "Yeah That Didn't Work.  Back to the Lab with That One, Buddy",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 10
 )
@@ -204,7 +204,7 @@ story21photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story21.photo.attach(io: story21photo, filename: "seal.jpeg")
 
 story22 = Story.create!(
-  title: "Wait, Why Don't You Have ownProps...?  I'm So Confused.",
+  title: "Wait, Why Don't You Have ownProps...?  I'm So Confused",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 3
 )
@@ -212,7 +212,7 @@ story22photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story22.photo.attach(io: story22photo, filename: "seal.jpeg")
 
 story23 = Story.create!(
-  title: "It's Gotta Be Your Container, Look at the Parent.",
+  title: "It's Gotta Be Your Container, Look at the Parent",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 5
 )
@@ -220,7 +220,7 @@ story23photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story23.photo.attach(io: story23photo, filename: "seal.jpeg")
 
 story24 = Story.create!(
-  title: "Guys, Why is My Footer Not Working.",
+  title: "Guys, Why is My Footer Not Working",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 5
 )
@@ -228,7 +228,7 @@ story24photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story24.photo.attach(io: story24photo, filename: "seal.jpeg")
 
 story25 = Story.create!(
-  title: "Good Good, Everything Broke.  Welp, Time for Bed.",
+  title: "Good Good, Everything Broke.  Welp, Time for Bed",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 2
 )
@@ -236,7 +236,7 @@ story25photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story25.photo.attach(io: story25photo, filename: "seal.jpeg")
 
 story26 = Story.create!(
-  title: "Why Does This Not Work, but When I Do This...  Oh, I forgot the Class Name.",
+  title: "Why Does This Not Work, but When I Do This...  Oh, I forgot the Class Name",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 10
 )
@@ -244,7 +244,7 @@ story26photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story26.photo.attach(io: story26photo, filename: "seal.jpeg")
 
 story27 = Story.create!(
-  title: "OMG, that Robin Sparkles Song is Stuck in My Head.",
+  title: "OMG, that Robin Sparkles Song is Stuck in My Head",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 10
 )
@@ -252,7 +252,7 @@ story27photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story27.photo.attach(io: story27photo, filename: "seal.jpeg")
 
 story28 = Story.create!(
-  title: "I Want to Go to Canada.",
+  title: "I Want to Go to Canada",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 7
 )
@@ -260,7 +260,7 @@ story28photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story28.photo.attach(io: story28photo, filename: "seal.jpeg")
 
 story29 = Story.create!(
-  title: "That's Someone I Networked With.",
+  title: "That's Someone I Networked",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 4
 )
@@ -268,7 +268,7 @@ story29photo = open("https://shmedium-seeds.s3.us-east-2.amazonaws.com/shmedium+
 story29.photo.attach(io: story29photo, filename: "seal.jpeg")
 
 story30 = Story.create!(
-  title: "Ooooh, Let's Look at My Boy's Portfolio.",
+  title: "Ooooh, Let's Look at My Boy's Portfolio",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 8
 )

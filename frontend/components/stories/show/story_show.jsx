@@ -81,7 +81,7 @@ class StoryShow extends React.Component{
                   <img className="logo-pic" src={window.logo} alt="logo-pic" />
                   <Link className="author" to={`/users/${story.author_id}`}>{user.username}</Link>
                 </div>
-                <div className="subtitle-subs">
+                <div className="story-show-subtitle-subs">
                       <br/>
                       <p className="date">Dec 28 •</p>
                       <br/>

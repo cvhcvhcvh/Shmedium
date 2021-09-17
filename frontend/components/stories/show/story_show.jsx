@@ -91,7 +91,8 @@ class StoryShow extends React.Component{
                       <div className="heart">
                         {currentUser ? 
 
-                          <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> : null }
+                          <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> : 
+                          <p className="login-to-like">Login to Like</p> }
                       </div>
                       <div className="story-show-subtitle-links">
                         {/* <img className="logo-pic" src={window.github} alt="logo-pic" />
@@ -120,22 +121,27 @@ class StoryShow extends React.Component{
            
           <br/>
           <br/>
+          {currentUser === user ? 
           <div className="story-button-div">
-            <Link className="story-button" to={`/stories/${this.props.story.id}/edit`}>Edit</Link>
+            
+            <Link className="story-button" to={`/stories/${this.props.story.id}/edit`}>Edit This Story</Link>
             <br/>
           
-            <button className="story-button" onClick={this.handleSubmit}>Delete</button>
+            <button className="story-button" onClick={this.handleSubmit}>Delete This Story</button>
             <br/>
-            <Link className="story-button" to={`/stories/new`}>New Story</Link>
+            <Link className="story-button" to={`/stories/new`}>Write a New Story</Link>
             <br/>
             <Link className="story-button" to={`/`}>Home</Link>
             <br/>
             
           </div>
+          : null}
         </div>
               
         <div>
+          
           <ResponseFormContainer story={story} currentUser={currentUser}/>
+          <h1 className="what-others-are-saying">What Others Are Saying</h1>
             {responseItems} 
         </div>
         <div className="story-show-footer">
@@ -167,10 +173,10 @@ class StoryShow extends React.Component{
             </Link>
             
               <div className="shmedium-footer-about-box">
-                  <p className="shmedium-footer-about">About</p>
-                  <p className="shmedium-footer-about">Write</p>
-                  <p className="shmedium-footer-about">Help</p>
-                  <p className="shmedium-footer-about">Legal</p>
+                  <a className="shmedium-footer-about" href="https://www.google.com">About</a>
+                  <a className="shmedium-footer-about" href="https://www.google.com">Write</a>
+                  <a className="shmedium-footer-about" href="https://www.google.com">Help</a>
+                  <a className="shmedium-footer-about" href="https://www.google.com">Legal</a>
               </div>
            </div>
         </div>

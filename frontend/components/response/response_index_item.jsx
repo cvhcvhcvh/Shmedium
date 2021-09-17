@@ -7,6 +7,7 @@ const ResponseIndexItem = props => {
     <div className="actual-response-box">
       <br/>
         <div className="actual-responses">
+          
           {props.response.body}
           <div className="like-response">
             {/* <LikeButton/> */}

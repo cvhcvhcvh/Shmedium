@@ -94,7 +94,7 @@ a.author{
 .story-body{
   font-size: 22px;
   color: #323232;
-  width: 750px;
+
   // padding-bottom: 50px;
 }
 
@@ -131,7 +131,10 @@ a.author{
 }
 
 .login-to-post{
-
+  font-family: "Helvetica Neue";
+  color: green; 
+  justify-content: center;
+  display: flex;
 }
 
 .story-show-story-info{
@@ -151,7 +154,7 @@ a.author{
 }
 
 .story-show-subtitle-links{
-  padding-left: 455px;
+  padding-left: 405px;
   cursor: pointer;
 }
 
@@ -240,7 +243,9 @@ a.shmedium-home-link-footer {
   color: white;
   font-family: "Helvetica Neue";
   flex: 1;
-  padding-right: 10px
+  padding-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .shmedium-footer-about-box{
@@ -261,4 +266,12 @@ a.shmedium-home-link-footer {
   margin-top: 10px;
   // padding-left: 55px;
   
+}
+
+.login-to-like{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: green;
+  margin-right: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px
 }

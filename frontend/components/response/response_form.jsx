@@ -45,7 +45,7 @@ class ResponseForm extends React.Component {
               
           </form>
           : 
-          <p className="login-to-post">Login to respond</p>
+          <p className="login-to-post">Login to Respond</p>
           }
         <div>
           

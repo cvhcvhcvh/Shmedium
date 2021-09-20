@@ -122,10 +122,10 @@
   float: left;
   color: black;
   text-align: center;
-  padding: 5px;
+  // padding: 5px;
   text-decoration: none;
   font-size: 14px;
-  color: green
+  color: green;
 }
 
 .topnav-logged-in a:hover {
@@ -147,11 +147,11 @@
   padding-left: 285px;
   padding-right: 300px;
   box-shadow: 0 4px 6px -6px #222;
+  height: 65px;
  
 }
 
 .nav-buttons-right-logged-in{
-  // border: solid 1px red;
   display: flex;
   height: 40px;
   width: 200px;
@@ -215,9 +215,14 @@ a.nav-words{
   align-items: center;
   border-radius: 70px;
   background-color: white;
-  border:  1px solid green;
+  border: 1px solid green;
   width: 60px;
-  font-size: 12px
+  margin-top: 30;
+  font-size: 12px;
+  /* margin-top: 12px; */
+  height: 38px;
+  display: flex;
+  justify-content: center;
 }
 
 .modal-login{

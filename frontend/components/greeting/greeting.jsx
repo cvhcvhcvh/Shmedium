@@ -35,6 +35,7 @@ const Greeting = ({ currentUser, logout }) => {
             <a className="shmedium-home-link" href="#"><img className="home-logo" src={window.home} alt="quote-pic" />Shmedium</a>
               {/* <Link to="/"></Link> */}
                 <div className="nav-buttons-right-logged-in"> 
+                  
                       <a className="login-write" href="#/stories/new">Write</a>
                         
                         
@@ -42,7 +43,7 @@ const Greeting = ({ currentUser, logout }) => {
                       {/* <img className="home-logo" src={window.login} alt="quote-pic"/> */}
                       
                       <div className="dropdown">
-                        <img className="home-logo" src={window.login} alt="quote-pic"/>
+                        <img className="profile-logo" src={window.login} alt="quote-pic"/>
                         <div className="dropdown-content">
                           <button className="submit-button" onClick={logout}>Log Out</button>
                         </div>

@@ -139,10 +139,11 @@ class StoryShow extends React.Component{
         </div>
               
         <div>
-          
           <ResponseFormContainer story={story} currentUser={currentUser}/>
-          <h1 className="what-others-are-saying">What Others Are Saying</h1>
-            {responseItems} 
+          
+            <h1 className="what-others-are-saying">What Others Are Saying</h1>
+              { responseItems.length > 0 ? responseItems : <p className="what-others-are-saying">hey</p>
+              }
         </div>
         <div className="story-show-footer">
           <div className="story-show-footer-content">

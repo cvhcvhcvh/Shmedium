@@ -37,13 +37,11 @@ class ResponseForm extends React.Component {
         <div className="response-form">
           
           {this.props.currentUser ? 
-          <form onSubmit={this.handleSubmit} action="">
-            
-          
-            <textarea className="textarea" onChange={this.updateBody} value={this.state.body}/>
-              <input className="submit-button" type="submit" value="Respond" />
-              
-          </form>
+            <form onSubmit={this.handleSubmit} action="">
+              <textarea placeholder="what are your thoughts?" className="textarea" onChange={this.updateBody} value={this.state.body}/>
+                <input className="submit-button" type="submit" value="Respond" />
+                
+            </form>
           : 
           <p className="login-to-post">Login to Respond</p>
           }

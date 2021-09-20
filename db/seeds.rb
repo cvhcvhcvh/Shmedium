@@ -30,7 +30,7 @@ Story.connection.execute('ALTER SEQUENCE stories_id_seq RESTART WITH 1')
 ActiveStorage::Attachment.all.each { |attachment| attachment.purge }
 
 story1 = Story.create!(
-  title: "I Was watching Fast & Furious 5...",
+  title: "I Was Watching Fast & Furious 5...",
   body: Faker::Hipster.paragraph_by_chars(characters: 2500, supplemental: false),
   author_id: 1
 )

@@ -30,31 +30,30 @@ const Greeting = ({ currentUser, logout }) => {
   );
 
   const loggedIn = () => (
-      <div className="splash-home">
-      <div>
-        <div className="topnav-logged-in">
-          <a className="shmedium-home-link" href="#"><img className="home-logo" src={window.home} alt="quote-pic" />Shmedium</a>
-            {/* <Link to="/"></Link> */}
-               <div className="nav-buttons-right-logged-in"> 
-                    <a className="login-write" href="#/stories/new">Write</a>
+      
+          <div className="topnav-logged-in">
+            <a className="shmedium-home-link" href="#"><img className="home-logo" src={window.home} alt="quote-pic" />Shmedium</a>
+              {/* <Link to="/"></Link> */}
+                <div className="nav-buttons-right-logged-in"> 
+                      <a className="login-write" href="#/stories/new">Write</a>
+                        
+                        
+                        {/* Hi, {currentUser.username}! */}
+                      {/* <img className="home-logo" src={window.login} alt="quote-pic"/> */}
                       
+                      <div className="dropdown">
+                        <img className="home-logo" src={window.login} alt="quote-pic"/>
+                        <div className="dropdown-content">
+                          <button className="submit-button" onClick={logout}>Log Out</button>
+                        </div>
+
+                      </div>
                       
-                      {/* Hi, {currentUser.username}! */}
-                    {/* <img className="home-logo" src={window.login} alt="quote-pic"/> */}
-                    
-                    <div className="dropdown">
-                      <span> <img className="home-logo" src={window.login} alt="quote-pic"/></span>
-                      <p className="dropdown-content">Log Out</p>
-                    </div>
-                    
-                    <button className="submit-button" onClick={logout}>Log Out</button>
-               </div>
-        </div>
-          <div className="home-index"> 
-            {/* <StoryIndexContainer/> */}
+             
+                </div>
           </div>
-          </div>
-      </div>
+        
+     
 
   );
 

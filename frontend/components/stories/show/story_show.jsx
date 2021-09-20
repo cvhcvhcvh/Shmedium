@@ -121,7 +121,8 @@ class StoryShow extends React.Component{
            
           <br/>
           <br/>
-          {currentUser === user ? 
+              
+          {currentUser === user.id ? 
           <div className="story-button-div">
             
             <Link className="story-button" to={`/stories/${this.props.story.id}/edit`}>Edit This Story</Link>
@@ -142,7 +143,7 @@ class StoryShow extends React.Component{
           <ResponseFormContainer story={story} currentUser={currentUser}/>
           
             <h1 className="what-others-are-saying">What Others Are Saying</h1>
-              { responseItems.length > 0 ? responseItems : <p className="what-others-are-saying">hey</p>
+              { responseItems.length > 0 ? responseItems : <p className="what-others-are-saying-nothing-yet">No responses yet...</p>
               }
         </div>
         <div className="story-show-footer">

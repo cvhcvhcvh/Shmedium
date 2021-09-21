@@ -45,7 +45,7 @@ const Greeting = ({ currentUser, logout }) => {
                       <div className="dropdown">
                         <img className="profile-logo" src={window.login} alt="quote-pic"/>
                         <div className="dropdown-content">
-                          <button className="submit-button" onClick={logout}>Log Out</button>
+                          <button className="submit-button" onClick={logout}>Sign Out</button>
                         </div>
 
                       </div>

@@ -43,7 +43,9 @@ class ResponseForm extends React.Component {
                 
             </form>
           : 
-          <p className="login-to-post">Login to Respond</p>
+            <button className="login-to-post" onClick={() => dispatch(openModal('signup'))}>
+                            Login to Respond
+            </button>
           }
         <div>
           

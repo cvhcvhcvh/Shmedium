@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LikeButton from '../../like_button/like_button';
 import ResponseFormContainer from '../../response/response_form_container';
 import ResponseIndexItem from '../../response/response_index_item';
-
+import { openModal } from '../../../actions/modal_actions';
 
 
 class StoryShow extends React.Component{
@@ -88,12 +88,15 @@ class StoryShow extends React.Component{
                       <p className="date">2 min •</p>
                       <br/>
                       <p className="genre">Nonfiction</p>
-                      <div className="heart">
-                        {currentUser ? 
+                        <div className="heart">
+                          {currentUser ? 
 
-                          <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> : 
-                          <p className="login-to-like">Login to Like</p> }
-                      </div>
+                            <LikeButton storyId={this.props.storyId} currentUserId={this.props.currentUserId} fetchLike={this.props.fetchLike} createLike={this.props.createLike} deleteLike={this.props.deleteLike}/> : 
+                    
+                            <button className="login-to-like" onClick={() => dispatch(openModal('signup'))}>
+                            Login to Like
+                            </button>}
+                        </div>
                       <div className="story-show-subtitle-links">
                         {/* <img className="logo-pic" src={window.github} alt="logo-pic" />
                         <img className="logo-pic" src={window.linkedin} alt="logo-pic" /> */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { openModal } from '../../actions/modal_actions';
 import ResponseIndexItem from './response_index_item';
 
 class ResponseForm extends React.Component {

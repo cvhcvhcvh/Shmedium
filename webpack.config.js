@@ -2,6 +2,7 @@
 var path = require('path');
 
 module.exports = {
+  mode: 'production',
   entry: './frontend/daddyfile.jsx',
   output: {
     path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),

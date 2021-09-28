@@ -101,8 +101,8 @@ class StoryShow extends React.Component{
                         {/* <img className="logo-pic" src={window.github} alt="logo-pic" />
                         <img className="logo-pic" src={window.linkedin} alt="logo-pic" /> */}
 
-                        <a href="https://www.linkedin.com/in/cvhcvh/"> <img className="logo-pic" src={window.linkedin} alt="logo-pic" /></a>
-                        <a href="https://github.com/cvhcvhcvh"> <img className="logo-pic" src={window.github} alt="logo-pic" /></a>
+                        <a href="https://www.linkedin.com/in/cvhcvh/"> <img className="logo-pic" src={window.linkedin} alt="logo-pic" target="_blank" /></a>
+                        <a href="https://github.com/cvhcvhcvh"> <img className="logo-pic" src={window.github} alt="logo-pic" target="_blank"/></a>
 
                       </div>
 
@@ -178,10 +178,10 @@ class StoryShow extends React.Component{
             </Link>
             
               <div className="shmedium-footer-about-box">
-                  <a className="shmedium-footer-about" href="https://www.google.com">About</a>
-                  <a className="shmedium-footer-about" href="https://www.google.com">Write</a>
-                  <a className="shmedium-footer-about" href="https://www.google.com">Help</a>
-                  <a className="shmedium-footer-about" href="https://www.google.com">Legal</a>
+                  <a className="shmedium-footer-about" href="https://www.google.com" target="_blank">About</a>
+                  <a className="shmedium-footer-about" href="https://www.google.com" target="_blank">Write</a>
+                  <a className="shmedium-footer-about" href="https://www.google.com" target="_blank">Help</a>
+                  <a className="shmedium-footer-about" href="https://www.google.com" target="_blank">Legal</a>
               </div>
            </div>
         </div>

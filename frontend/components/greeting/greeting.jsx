@@ -18,8 +18,8 @@ const Greeting = ({ currentUser, logout }) => {
                 <div className="blank">
                 </div>
                 <div className="nav-buttons-right-logged-out">
-                    <a className="nav-words" href="https://www.linkedin.com/in/cvhcvh/">Linkedin</a>
-                    <a className="nav-words" href="https://github.com/cvhcvhcvh">Github</a>
+                    <a className="nav-words" href="https://www.linkedin.com/in/cvhcvh/" target="_blank" title="">Linkedin</a>
+                    <a className="nav-words" href="https://github.com/cvhcvhcvh" target="_blank" title="">Github</a>
                     <a className="nav-link-login" href="#"onClick={() => dispatch(openModal('login'))}>Sign In</a>
                     <a className="nav-link-signup" href="#" onClick={() => dispatch(openModal('signup'))}
                     >Get Started</a>

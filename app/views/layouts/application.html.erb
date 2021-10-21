@@ -2,6 +2,16 @@
 <html>
   <head>
     <title>Shmedium</title>
+
+    <meta property="og:title" content="Shmedium" />
+    <meta property='og:image' content="<%= image_url('shmedium.gif') %>"/>
+    <meta property="og:description"
+      content="Shmedium is a clone of Medium using Rails and React that allows users to create an account, publish stories, and read stories by way of following and interacting with other users."
+    />
+    <meta property="og:url"
+      content="https://shmedium-app.herokuapp.com/#/"
+    />
+
     <%= favicon_link_tag asset_path('logo.png') %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
@@ -17,8 +27,6 @@
       window.github= "<%= image_url('github.png')%>"
       window.linkedin= "<%= image_url('linkedin.png')%>"
 
-
-     
     </script>
     <% if current_user %>
       <script>

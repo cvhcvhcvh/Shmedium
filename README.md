@@ -1,6 +1,4 @@
-# [Shmedium](https://shmedium-app.herokuapp.com/#/)
-
-# Shmedium is a clone of Medium using Rails and React that allows users to create an account, publish stories, and read stories by way of following and interacting with other users.  
+# [Shmedium](https://shmedium-app.herokuapp.com/#/) is a clone of Medium using Rails and React that allows users to create an account, publish stories, and read stories by way of following and interacting with other users.  
 
 ## Shmedium incorporates a combination React and Redux for UI/UX while maintaining a robust backend framework using Ruby on Rails.  
 
